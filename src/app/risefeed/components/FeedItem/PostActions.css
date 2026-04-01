@@ -1,0 +1,130 @@
+/* ===============================
+   ROOT LAYOUT
+=============================== */
+.reactions-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8px;
+}
+
+/* ===============================
+   LEFT SIDE
+=============================== */
+.left-actions {
+  display: flex;
+  gap: 16px;
+}
+
+/* ===============================
+   BUTTON BASE
+=============================== */
+.icon-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background: transparent;
+  border: none;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  /* 🔥 FIX: make visible (no more milk fade) */
+  color: rgba(40, 40, 40, 0.85);
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* ICON */
+.icon {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* LABEL */
+.label {
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  opacity: 0.9;
+}
+
+/* ===============================
+   HOVER / INTERACTION
+=============================== */
+.icon-btn:hover {
+  transform: translateY(-1px);
+  color: #f5c76b; /* subtle gold */
+}
+
+/* CLICK */
+.icon-btn:active {
+  transform: scale(1.08);
+}
+
+/* ===============================
+   FEEL ACTIVE (STRONG GOLD)
+=============================== */
+.icon-btn.feel.active {
+  color: #f5c76b;
+  text-shadow: 0 0 6px rgba(255, 200, 100, 0.5);
+}
+
+/* ===============================
+   DISABLED
+=============================== */
+.reactions-row.paused .icon-btn {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* ===============================
+   RIGHT SIDE
+=============================== */
+.right-actions {
+  display: flex;
+  align-items: center;
+}
+
+/* ===============================
+   UPLIFT (PREMIUM BUTTON)
+=============================== */
+.uplift-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 7px 14px;
+
+  border-radius: 22px;
+  border: none;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  background: linear-gradient(135deg, #f5c76b, #ffb347);
+  color: #2b2b2b;
+
+  box-shadow: 0 4px 14px rgba(255, 180, 80, 0.35);
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* HOVER */
+.uplift-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 18px rgba(255, 180, 80, 0.45);
+}
+
+/* CLICK */
+.uplift-btn:active {
+  transform: scale(1.12);
+}
+
+/* DISABLED */
+.reactions-row.paused .uplift-btn {
+  opacity: 0.3;
+  pointer-events: none;
+}

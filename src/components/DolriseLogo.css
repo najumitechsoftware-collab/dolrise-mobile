@@ -1,0 +1,62 @@
+/* ===============================
+   Dolrise Logo – Final Version
+   Brand: Milk + Gold + Ocean
+   =============================== */
+
+/* Root SVG */
+.dolrise-logo {
+  margin-bottom: 24px;
+  animation: dolrise-float 4s ease-in-out infinite;
+}
+
+/* ===============================
+   COLORS
+   =============================== */
+
+/* Premium Gold stroke */
+.dolrise-circle,
+.dolrise-wave {
+  stroke: #d4af37;
+}
+
+/* ===============================
+   STROKE WEIGHTS
+   =============================== */
+
+/* Circle – elegant & balanced */
+.dolrise-circle {
+  stroke-width: 4;
+}
+
+/* 🌊 Wave – BOLD & PREMIUM (final) */
+.dolrise-wave {
+  stroke-width: 6; /* ← main upgrade */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ===============================
+   MOTION
+   =============================== */
+
+/* Gentle breathing / floating */
+@keyframes dolrise-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   DARK MODE (future ready)
+   =============================== */
+
+.dark .dolrise-circle,
+.dark .dolrise-wave {
+  stroke: #e6c76a;
+}

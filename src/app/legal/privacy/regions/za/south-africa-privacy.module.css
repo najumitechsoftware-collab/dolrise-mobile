@@ -1,0 +1,47 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.header {
+  margin-bottom: 2.5rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.section h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.notice {
+  margin-top: 3rem;
+  padding: 1.25rem 1.5rem;
+  background: #faf8f2;
+  border: 1px solid #e8e1cf;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: #444;
+}

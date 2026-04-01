@@ -1,0 +1,166 @@
+
+/* === GLOBAL EXECUTIVE LAYOUT === */
+
+.exec-layout {
+  display: flex;
+  height: 100vh;
+  background: #0f1115;
+  color: #e5e7eb;
+  font-family: "Inter", sans-serif;
+}
+
+/* === TOP BAR === */
+
+.exec-topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: #141821;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  border-bottom: 1px solid #1f2937;
+  z-index: 1000;
+}
+
+.brand-title {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+/* === SEARCH === */
+
+.exec-search {
+  width: 420px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #1f2937;
+  background: #0f1115;
+  color: #fff;
+  outline: none;
+}
+
+.exec-search:focus {
+  border-color: #3b82f6;
+}
+
+/* === STATUS === */
+
+.status-indicator,
+.threat-indicator {
+  font-size: 12px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.green { background: #10b981; }
+.yellow { background: #f59e0b; }
+.red { background: #ef4444; }
+
+/* === AVATAR === */
+
+.exec-avatar {
+  background: #1f2937;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+/* === SIDEBAR === */
+
+.exec-sidebar {
+  margin-top: 70px;
+  width: 240px;
+  background: #11141a;
+  border-right: 1px solid #1f2937;
+  padding: 20px 10px;
+  transition: transform 0.3s ease;
+}
+
+.exec-menu-item {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #9ca3af;
+  padding: 12px 15px;
+  text-align: left;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.exec-menu-item:hover {
+  background: #1f2937;
+  color: #fff;
+}
+
+.exec-menu-item.active {
+  background: #2563eb;
+  color: #fff;
+}
+
+/* === CONTENT === */
+
+.exec-content {
+  flex: 1;
+  margin-top: 70px;
+  padding: 30px;
+  overflow-y: auto;
+}
+.menu-group {
+  margin-bottom: 20px;
+}
+
+.menu-title {
+  font-size: 11px;
+  opacity: 0.4;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* IMPROVE BUTTON */
+.exec-menu-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  background: transparent;
+  border: none;
+  color: #ccc;
+  transition: 0.2s;
+}
+
+.exec-menu-item:hover {
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+}
+
+.exec-menu-item.active {
+  background: linear-gradient(135deg, #6366f1, #7c3aed);
+  color: #fff;
+}

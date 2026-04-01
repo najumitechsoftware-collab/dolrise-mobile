@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.dolrise.app",
+      "sha256_cert_fingerprints": [
+        "29:4B:FD:78:CD:6E:FD:FC:ED:97:D1:B5:76:E5:84:D6:92:64:47:B6:0A:D8:65:5A:21:19:2D:45:FD:D2:E2:05"
+      ]
+    }
+  }
+]

@@ -1,0 +1,46 @@
+.new-method-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+.new-method-container h1 {
+  margin-bottom: 30px;
+}
+
+.new-method-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  padding: 14px;
+  width: 100%;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg,#0ea5e9,#2563eb);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}

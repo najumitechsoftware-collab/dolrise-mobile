@@ -1,0 +1,144 @@
+.invite-page {
+  background: #fff8ea;
+  min-height: 100vh;
+  padding: 32px 20px 80px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+  color: #2b2b2b;
+}
+
+.invite-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 40px;
+}
+
+.invite-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.invite-header p {
+  margin-top: 8px;
+  font-size: 15px;
+  color: #666;
+}
+
+.invite-cards {
+  display: grid;
+  gap: 24px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.invite-card {
+  background: #fffdf6;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.invite-card h2 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.invite-desc {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.invite-link-box {
+  background: #f4f1e8;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  word-break: break-all;
+}
+
+.invite-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.invite-actions button {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: #d4af37;
+  color: white;
+}
+
+.invite-actions button:nth-child(2) {
+  background: #eee2b5;
+  color: #5a4a1f;
+}
+
+.invite-share {
+  text-align: center;
+  margin: 56px auto 40px;
+}
+
+.invite-share h3 {
+  margin-bottom: 12px;
+}
+
+.share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.share-buttons button {
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+}
+
+.invite-note {
+  font-size: 13px;
+  color: #777;
+  margin-top: 14px;
+}
+
+.partner-cta {
+  margin-top: 80px;
+  text-align: center;
+  padding: 36px 20px;
+  border-top: 1px solid #eee;
+}
+
+.partner-cta h2 {
+  font-size: 22px;
+}
+
+.partner-cta p {
+  max-width: 560px;
+  margin: 12px auto 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+.partner-btn {
+  background: transparent;
+  border: 2px solid #d4af37;
+  color: #8a6d1d;
+  padding: 12px 20px;
+  border-radius: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.partner-footnote {
+  display: block;
+  margin-top: 12px;
+  font-size: 12px;
+  color: #888;
+}

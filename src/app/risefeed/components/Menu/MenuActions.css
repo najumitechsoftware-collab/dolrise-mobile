@@ -1,0 +1,69 @@
+.menu-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  z-index: 999;
+}
+
+.menu-panel {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 520px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg, #fff);
+  border-radius: 18px 18px 0 0;
+  padding: 16px;
+  animation: slideUp 0.25s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translate(-50%, 100%);
+  }
+  to {
+    transform: translate(-50%, 0);
+  }
+}
+
+.menu-title {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.menu-section {
+  margin-bottom: 14px;
+}
+
+.menu-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: #f6f6f6;
+  margin-bottom: 8px;
+  font-size: 15px;
+  text-align: left;
+}
+
+.menu-btn:hover {
+  background: #eee;
+}
+
+.menu-btn.delete,
+.menu-btn.danger {
+  background: #fff1f1;
+  color: #b00020;
+}
+
+.menu-close {
+  width: 100%;
+  margin-top: 8px;
+  background: none;
+  border: none;
+  color: #777;
+  padding: 10px;
+}

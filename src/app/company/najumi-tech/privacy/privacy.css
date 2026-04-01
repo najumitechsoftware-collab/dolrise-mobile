@@ -1,0 +1,49 @@
+.najumi-privacy {
+  max-width: 760px;
+  margin: 48px auto;
+  padding: 0 18px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu;
+  color: #2f3a40; /* ash text */
+  line-height: 1.75;
+}
+
+.najumi-privacy h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2b5fb8; /* soft blue */
+  margin-bottom: 12px;
+}
+
+.najumi-privacy h2 {
+  font-size: 20px;
+  margin-top: 36px;
+  margin-bottom: 8px;
+  color: #355fa8; /* blue-ash */
+}
+
+.najumi-privacy p {
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.najumi-privacy ul {
+  padding-left: 18px;
+  margin-bottom: 16px;
+}
+
+.najumi-privacy li {
+  margin-bottom: 8px;
+}
+
+.najumi-privacy strong {
+  color: #2b5fb8;
+}
+
+.najumi-privacy a {
+  color: #355fa8;
+  text-decoration: none;
+}
+
+.najumi-privacy a:hover {
+  text-decoration: underline;
+}

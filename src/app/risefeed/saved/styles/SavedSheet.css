@@ -1,0 +1,64 @@
+.saved-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.45);
+  backdrop-filter: blur(6px);
+  z-index: 1200;
+}
+
+.saved-sheet {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-height: 80vh;
+  background: #fff;
+  border-radius: 20px 20px 0 0;
+  padding: 16px;
+  animation: slideUp .25s ease-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+.saved-header {
+  text-align: center;
+}
+
+.saved-handle {
+  width: 42px;
+  height: 4px;
+  background: #ccc;
+  border-radius: 4px;
+  margin: 0 auto 8px;
+}
+
+.saved-active {
+  margin-top: 12px;
+}
+
+.saved-mini {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.saved-mini img {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.saved-divider {
+  height: 1px;
+  background: #eee;
+  margin: 14px 0;
+}
+
+.saved-loading {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}

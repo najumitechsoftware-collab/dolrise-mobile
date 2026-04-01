@@ -1,0 +1,200 @@
+/* ===============================
+   GLOBAL
+=============================== */
+
+.search-container {
+  background: #020617;
+  min-height: 100vh;
+  padding: 24px;
+  color: #e2e8f0;
+  font-family: "Inter", sans-serif;
+}
+
+/* ===============================
+   HEADER
+=============================== */
+
+.search-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.search-header h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.search-header input {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: #e2e8f0;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-header input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2);
+}
+
+/* ===============================
+   META BAR
+=============================== */
+
+.search-meta {
+  background: linear-gradient(to right, #0f172a, #020617);
+  border: 1px solid #1e293b;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: #94a3b8;
+}
+
+/* ===============================
+   LOADING
+=============================== */
+
+.loading {
+  color: #38bdf8;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* ===============================
+   RESULTS
+=============================== */
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ===============================
+   SECTION
+=============================== */
+
+.section {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 16px;
+  transition: 0.3s;
+}
+
+.section:hover {
+  border-color: #38bdf8;
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.1);
+}
+
+.section h2 {
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: #f1f5f9;
+}
+
+/* ===============================
+   ITEMS
+=============================== */
+
+.section-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr auto;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background: #0f172a;
+  transition: 0.2s;
+}
+
+.item:hover {
+  background: #1e293b;
+}
+
+/* ===============================
+   BADGE
+=============================== */
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.badge.red {
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+}
+
+.badge.orange {
+  background: rgba(249, 115, 22, 0.15);
+  color: #fb923c;
+}
+
+.badge.yellow {
+  background: rgba(250, 204, 21, 0.15);
+  color: #facc15;
+}
+
+/* ===============================
+   SCROLLBAR
+=============================== */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
+
+/* ===============================
+   ANIMATIONS
+=============================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.section,
+.item {
+  animation: fadeIn 0.3s ease;
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+
+@media (max-width: 768px) {
+  .item {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}

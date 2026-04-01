@@ -1,0 +1,131 @@
+/* ======================
+   SLIDE-UP SHEET
+====================== */
+.identity-sheet {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: linear-gradient(180deg, #fffdf4, #fbf6df);
+
+  display: flex;
+  flex-direction: column;
+
+  animation: identitySlideUp 0.35s ease-out;
+}
+
+/* SLIDE ANIMATION */
+@keyframes identitySlideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* ======================
+   HEADER
+====================== */
+.identity-header {
+  padding: 20px 24px 16px;
+  border-bottom: 1px solid #eadfae;
+}
+
+.identity-back {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #7a5f22;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.identity-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2b2b2b;
+}
+
+.identity-sub {
+  font-size: 14px;
+  color: #6b6b6b;
+  margin-top: 6px;
+  max-width: 360px;
+}
+
+/* ======================
+   BODY
+====================== */
+.identity-body {
+  flex: 1;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.identity-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.identity-field label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2b2b2b;
+}
+
+.identity-field input {
+  padding: 14px 16px;
+  font-size: 15px;
+  border-radius: 14px;
+  border: 1px solid #e6dcc0;
+  background: #ffffff;
+  outline: none;
+}
+
+.identity-field input:focus {
+  border-color: #c9a64d;
+  box-shadow: 0 0 0 2px rgba(201, 166, 77, 0.2);
+}
+
+.identity-field small {
+  font-size: 12px;
+  color: #6b6b6b;
+  line-height: 1.4;
+}
+
+/* ======================
+   FOOTER
+====================== */
+.identity-footer {
+  padding: 16px 24px 24px;
+  border-top: 1px solid #eadfae;
+  background: linear-gradient(
+    180deg,
+    rgba(255,253,244,0.9),
+    rgba(251,246,223,1)
+  );
+}
+
+.save-btn {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 18px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(
+    135deg,
+    #c9a64d,
+    #9b7a2f
+  );
+  color: #ffffff;
+}
+
+.save-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

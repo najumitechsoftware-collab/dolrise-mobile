@@ -1,0 +1,115 @@
+/* ============================================================
+   DOLRISE LEGAL PAGES – GLOBAL PREMIUM STYLE
+   Matches Global Privacy Policy Layout
+============================================================ */
+
+/* PAGE WRAPPER */
+.legal-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 24px 120px;
+  background: #f7f8fa;
+  color: #0f172a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.8;
+}
+
+/* HERO TITLE */
+.legal-page h1 {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+/* META INFO (Dates & Version) */
+.legal-meta {
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 50px;
+}
+
+.legal-meta p {
+  margin: 6px 0;
+}
+
+/* SECTION WRAPPER */
+.legal-section {
+  margin-bottom: 60px;
+}
+
+/* SECTION HEADINGS */
+.legal-section h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #111827;
+}
+
+/* BODY TEXT */
+.legal-section p {
+  font-size: 16px;
+  color: #374151;
+  margin-bottom: 18px;
+}
+
+/* LISTS */
+.legal-section ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.legal-section li {
+  margin-bottom: 10px;
+  color: #374151;
+}
+
+/* CONTACT BOX */
+.legal-contact-box {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+/* VERSION / FOOTER BLOCK */
+.legal-version {
+  margin-top: 80px;
+  padding-top: 40px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* LINKS */
+.legal-section a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.legal-section a:hover {
+  text-decoration: underline;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .legal-page {
+    padding: 60px 20px 100px;
+  }
+
+  .legal-page h1 {
+    font-size: 32px;
+  }
+
+  .legal-section h2 {
+    font-size: 20px;
+  }
+
+  .legal-section p {
+    font-size: 15px;
+  }
+}

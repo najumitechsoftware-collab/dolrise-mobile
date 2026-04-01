@@ -1,0 +1,42 @@
+.ceo-mod-container {
+  padding: 20px;
+  color: #fff;
+}
+
+/* KPI */
+.mod-kpis {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.kpi-card {
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 150px;
+}
+
+.kpi-card.alert {
+  border-left: 4px solid red;
+}
+
+/* LIST */
+.mod-item {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255,255,255,0.05);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* severity */
+.severity-critical { border-left: 4px solid red; }
+.severity-high { border-left: 4px solid orange; }
+.severity-medium { border-left: 4px solid yellow; }
+.severity-low { border-left: 4px solid green; }
+
+.mod-meta {
+  text-align: right;
+}

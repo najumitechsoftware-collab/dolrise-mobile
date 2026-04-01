@@ -1,0 +1,65 @@
+.system-page {
+  color: #fff;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.loading {
+  color: #888;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: #111;
+  border: 1px solid #222;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.card-title {
+  color: #888;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.card h2 {
+  font-size: 22px;
+}
+
+.actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn.warning {
+  background: #eab308;
+  color: #000;
+}
+
+.btn.danger {
+  background: #dc2626;
+  color: #fff;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,25 @@
+.categories{
+
+display:flex;
+
+gap:8px;
+
+overflow:auto;
+
+margin-bottom:12px;
+
+}
+
+.cat{
+
+padding:6px 12px;
+
+border-radius:20px;
+
+background:#222;
+
+color:white;
+
+border:none;
+
+}

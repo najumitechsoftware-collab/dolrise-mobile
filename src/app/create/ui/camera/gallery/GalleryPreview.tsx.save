@@ -1,0 +1,103 @@
+
+/* =========================
+STABLE PREVIEW URL
+========================= */
+
+const [previewUrl,setPreviewUrl]=useState<string | null>(null);
+
+useEffect(()=>{
+
+if(!file) return;
+
+const url = URL.createObjectURL(file);
+setPreviewUrl(url);
+
+return ()=>{
+
+URL.revokeObjectURL(url);
+
+};
+
+},[file]);
+
+const isVideo = file?.type?.startsWith("video");
+
+/* =========================
+CONTINUE → CREATE PAGE
+========================= */
+
+function handleContinue(){
+
+if(!file) return;
+
+/* set type */
+
+if(isVideo){
+store.setType("video");
+}else{
+store.setType("photo");
+}
+
+/* add media */
+
+store.addMedia([file]);
+
+/* go create page */
+
+router.push("/create");
+
+}
+
+/* =========================
+UI
+========================= */
+
+return(
+
+<div className={styles.wrapper}>
+
+<div className={styles.preview}>
+
+{isVideo ? (
+
+<video
+ref={videoRef}
+src={previewUrl || ""}
+controls
+className={styles.video}
+/>
+
+):(
+
+<img
+src={previewUrl || ""}
+className={styles.image}
+/>
+
+)}
+
+</div>
+
+<div className={styles.actions}>
+
+<button
+className={styles.back}
+onClick={onBack}
+>
+Back
+</button>
+
+<button
+className={styles.next}
+onClick={handleContinue}
+>
+Continue
+</button>
+
+</div>
+
+</div>
+
+);
+
+}

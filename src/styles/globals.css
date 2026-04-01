@@ -1,0 +1,98 @@
+/* ----------------------------------------------
+   DOLRISE GLOBAL BRAND THEME — 2025 Official UI
+   ---------------------------------------------- */
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  background: #f5f7fa; /* Milk White */
+  color: #444e57;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+  line-height: 1.5;
+}
+
+/* LINKS */
+a {
+  color: #0077a7;
+  text-decoration: none;
+}
+
+/* BUTTONS */
+button {
+  cursor: pointer;
+  transition: 0.18s ease-in-out;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+/* OCEAN BLUE BUTTON */
+.btn-ocean {
+  background: #0077a7;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn-ocean:hover {
+  background: #005f82;
+}
+
+/* ACCENT (Dolphin Teal) */
+.btn-teal {
+  background: #35b6b4;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn-teal:hover {
+  background: #2aa3a1;
+}
+
+/* GOLD FEELING MARK */
+.tag-gold {
+  color: #f5c25c !important;
+}
+
+/* SOFT CARD */
+.dol-card {
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* RIPPLE ANIMATION */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple:after {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.4);
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.45s;
+}
+
+.ripple:active:after {
+  transform: translate(-50%, -50%) scale(2.5);
+  opacity: 1;
+}

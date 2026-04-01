@@ -1,0 +1,112 @@
+/* ===============================
+   OVERLAY
+=============================== */
+
+.security-overlay {
+  position: fixed;
+  inset: 0;
+  background: #ffffff;
+  z-index: 1000;
+}
+
+/* ===============================
+   SHEET
+=============================== */
+
+.security-sheet {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  padding: 28px 20px;
+  overflow-y: auto;
+  background: #ffffff;
+}
+
+/* ===============================
+   SLIDE ANIMATION
+=============================== */
+
+.slide-up {
+  animation: slideUp 0.35s ease forwards;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   HEADER
+=============================== */
+
+.security-header {
+  margin-bottom: 30px;
+}
+
+.security-header h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 10px 0 6px;
+}
+
+.security-header p {
+  font-size: 14px;
+  color: #777;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* ===============================
+   CARDS
+=============================== */
+
+.security-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.security-card {
+  background: #f8f8f8;
+  border: none;
+  border-radius: 14px;
+  padding: 18px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.security-card:hover {
+  background: #f1f1f1;
+}
+
+.security-card h4 {
+  margin: 0 0 6px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.security-card p {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.arrow {
+  font-size: 18px;
+  color: #999;
+}

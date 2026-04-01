@@ -1,0 +1,118 @@
+/* PAGE BACKGROUND */
+.pageWrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #fffaf3, #e8f5ff); /* Milk + Sea */
+  padding: 20px;
+  color: #2b2b2b;
+}
+
+/* CARD */
+.card {
+  width: 90%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(22px);
+  border-radius: 20px;
+  padding: 30px 26px;
+  border: 1px solid rgba(234, 219, 180, 0.7);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  position: relative;
+}
+
+/* GOLD BAR */
+.goldBar {
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(to right, #d4af37, #e4c75a, #b99329);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* ICONS */
+.iconSpin {
+  width: 60px;
+  height: 60px;
+  color: #d4af37;
+  margin: 0 auto 16px;
+  animation: spin 1.2s linear infinite;
+}
+
+.iconSuccess {
+  width: 60px;
+  height: 60px;
+  color: #22c55e;
+  margin: 0 auto 16px;
+}
+
+.iconError {
+  width: 60px;
+  height: 60px;
+  color: #ef4444;
+  margin: 0 auto 16px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* TITLE */
+.title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+/* MESSAGE */
+.message {
+  font-size: 0.95rem;
+  color: #475569;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* LINKS */
+.loginLink {
+  color: #d4af37;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.loginLink:hover {
+  text-decoration: underline;
+}
+
+.redirectNote {
+  color: #64748b;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 25px;
+  padding-top: 12px;
+  border-top: 1px solid #e9dfcf;
+  font-size: 0.75rem;
+  color: #475569;
+}
+
+.footer span {
+  color: #d4af37;
+  font-weight: 600;
+}
+
+.footer p {
+  margin-top: 6px;
+  font-style: italic;
+  color: #6b7280;
+}

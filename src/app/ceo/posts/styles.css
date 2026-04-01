@@ -1,0 +1,52 @@
+.ceo-posts {
+  color: white;
+}
+
+.ceo-posts-search {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.ceo-posts-search input {
+  flex: 1;
+  padding: 10px;
+  background: #111;
+  border: 1px solid #333;
+  color: white;
+  border-radius: 5px;
+}
+
+.ceo-posts-search button {
+  padding: 10px 15px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+.ceo-posts-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.ceo-posts-table th,
+.ceo-posts-table td {
+  border-bottom: 1px solid #333;
+  padding: 10px;
+}
+
+.post-text {
+  max-width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.delete-btn {
+  padding: 6px 10px;
+  background: #b10606;
+  border: none;
+  color: white;
+  border-radius: 4px;
+}

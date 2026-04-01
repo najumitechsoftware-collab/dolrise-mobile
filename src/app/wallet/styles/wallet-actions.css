@@ -1,0 +1,146 @@
+/* ==========================================
+   WALLET ACTIONS — PREMIUM SaaS STYLE
+========================================== */
+
+.wallet-actions-wrapper {
+  margin-top: 28px;
+}
+
+/* ===============================
+   PRIMARY BUTTON
+=============================== */
+.wallet-primary-action {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.wallet-btn-primary {
+  width: 100%;
+  padding: 16px;
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #111827, #1f2937);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.wallet-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+.wallet-action-hint {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* ===============================
+   SECONDARY GRID
+=============================== */
+.wallet-secondary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.wallet-btn-secondary {
+  padding: 14px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Gold */
+.wallet-btn-secondary.gold {
+  background: linear-gradient(135deg, #d4af37, #c89b1d);
+  color: #111827;
+  border: none;
+}
+
+.wallet-btn-secondary.gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(200, 155, 29, 0.25);
+}
+
+/* Outline */
+.wallet-btn-secondary.outline {
+  background: white;
+  border: 1px solid #e5e7eb;
+  color: #1f2937;
+}
+
+.wallet-btn-secondary.outline:hover {
+  background: #f9fafb;
+}
+
+/* Disabled */
+.wallet-btn-secondary.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ===============================
+   BALANCE INFO
+=============================== */
+.wallet-balance-info {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #6b7280;
+  text-align: center;
+}
+
+/* ===============================
+   KYC CARD
+=============================== */
+.wallet-kyc-card {
+  margin-top: 20px;
+  background: #fff9f2;
+  border: 1px solid #f3e8d0;
+  padding: 18px;
+  border-radius: 18px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.wallet-kyc-icon {
+  font-size: 20px;
+}
+
+.wallet-kyc-card p {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.wallet-kyc-btn {
+  margin-top: 8px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+  background: #c89b1d;
+  color: #111827;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.wallet-kyc-btn:hover {
+  background: #b8961a;
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+@media (max-width: 420px) {
+  .wallet-secondary-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,255 @@
+/* 🌌 OVERLAY */
+.uplift-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 15, 0.55);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* 📦 SHEET */
+.uplift-sheet {
+  width: 100%;
+  max-width: 520px;
+  background: linear-gradient(180deg, #ffffff, #f9fafb);
+  border-radius: 24px 24px 0 0;
+  padding: 20px 18px 28px;
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.15);
+  animation: slideUp 0.35s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* 🧠 HEADER */
+.uplift-header {
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.uplift-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.uplift-header p {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+/* ✨ FEATURED */
+.uplift-featured {
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  border-radius: 16px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 13px;
+  color: #92400e;
+  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.25);
+}
+
+.uplift-featured strong {
+  display: block;
+  font-size: 15px;
+  margin-top: 2px;
+}
+
+/* 🧩 GRID */
+.uplift-tiers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+/* 🎁 CARD */
+.uplift-tier {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 14px 8px;
+  text-align: center;
+  border: 1px solid #f1f5f9;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+}
+
+.uplift-tier:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+.uplift-tier:active {
+  transform: scale(0.96);
+}
+
+/* ⭐ FEATURED CARD */
+.uplift-tier.featured {
+  border: 1.5px solid #f59e0b;
+  box-shadow: 0 8px 22px rgba(245, 158, 11, 0.25);
+}
+
+/* 😍 EMOJI */
+.uplift-tier .emoji {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+/* 🏷 LABEL */
+.uplift-tier .label {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* 💰 AMOUNT */
+.uplift-tier .amount {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111827;
+  margin-top: 2px;
+}
+
+/* ❌ ERROR */
+.uplift-error {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #dc2626;
+  text-align: center;
+}
+
+/* 🎉 SUCCESS MODAL */
+.uplift-success-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 15, 0.55);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 💎 SUCCESS CARD */
+.success-card {
+  background: white;
+  border-radius: 20px;
+  padding: 22px 18px;
+  width: 90%;
+  max-width: 340px;
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  animation: pop 0.25s ease;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.success-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.success-card p {
+  font-size: 14px;
+  color: #4b5563;
+  margin-top: 6px;
+}
+
+/* 💰 BREAKDOWN */
+.breakdown {
+  margin-top: 12px;
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.breakdown div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.breakdown strong {
+  color: #111827;
+}
+
+/* 💬 SUB TEXT */
+.success-card .sub {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #6b7280;
+}
+/* ❌ CLOSE BUTTON (TOP RIGHT) */
+.uplift-close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  background: #f3f4f6;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.uplift-close:hover {
+  background: #e5e7eb;
+}
+
+/* 📌 HEADER POSITION FIX */
+.uplift-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+/* 🔘 SUCCESS BUTTON */
+.success-close {
+  margin-top: 14px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #111827;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.success-close:hover {
+  background: #000;
+}

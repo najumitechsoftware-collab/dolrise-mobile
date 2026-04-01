@@ -1,0 +1,121 @@
+/* =========================================================
+   DOLRISE — ABOUT PAGE
+   Premium SaaS · Calm · Emotional-first
+========================================================= */
+
+.about-wrap {
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #f7f5ef,   /* soft milk */
+    #eaf6ff    /* calm sky */
+  );
+  padding: 64px 20px 80px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* MAIN CONTENT CONTAINER */
+.about-section {
+  max-width: 760px;
+  margin: 0 auto 64px;
+  text-align: left;
+}
+
+/* MAIN TITLES */
+.about-title {
+  font-size: clamp(28px, 4vw, 38px);
+  font-weight: 600;
+  color: #0d1b2a;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+/* SUB HEADINGS */
+.about-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1f2937;
+  margin-top: 36px;
+  margin-bottom: 12px;
+}
+
+/* BODY TEXT */
+.about-text {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #334155;
+  margin-bottom: 16px;
+}
+
+/* EMPHASIS */
+.about-text strong {
+  color: #d4af37; /* gold accent */
+  font-weight: 600;
+}
+
+/* TAGLINE (FOUNDER SECTION END) */
+.about-tagline {
+  margin-top: 28px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #0d1b2a;
+}
+
+/* ACTION AREA (REGISTER + LEGAL) */
+.about-actions {
+  margin-top: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+/* BUTTON BASE */
+.about-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-size: 14px;
+  text-decoration: none;
+  border: 1px solid #d4af37;
+  color: #0d1b2a;
+  background: transparent;
+  transition: all 0.25s ease;
+}
+
+/* PRIMARY CTA */
+.about-btn.primary {
+  background: #d4af37;
+  color: #0d1b2a;
+  font-weight: 600;
+}
+
+/* HOVER STATES */
+.about-btn:hover {
+  background: rgba(212, 175, 55, 0.12);
+}
+
+.about-btn.primary:hover {
+  background: #c9a635;
+}
+
+/* RESPONSIVE TWEAKS */
+@media (max-width: 640px) {
+  .about-wrap {
+    padding: 48px 16px 64px;
+  }
+
+  .about-section {
+    margin-bottom: 48px;
+  }
+
+  .about-title {
+    font-size: 28px;
+  }
+
+  .about-text {
+    font-size: 15px;
+  }
+}

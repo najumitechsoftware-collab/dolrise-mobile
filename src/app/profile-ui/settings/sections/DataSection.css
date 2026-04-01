@@ -1,0 +1,67 @@
+/* ===========================================
+   DOLRISE – DATA & TRANSPARENCY PREMIUM UI
+   Calm • Secure • High Trust
+=========================================== */
+
+.dt-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dt-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 18px;
+  text-align: left;
+  border: 1px solid rgba(200, 180, 120, 0.25);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s ease;
+}
+
+.dt-card h4 {
+  margin: 0 0 6px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.dt-card p {
+  margin: 0;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.dt-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Primary action */
+.dt-card.primary {
+  border: 1px solid rgba(30, 136, 229, 0.35);
+  background: linear-gradient(
+    135deg,
+    rgba(30, 136, 229, 0.08),
+    rgba(30, 136, 229, 0.02)
+  );
+}
+
+/* Dangerous action */
+.dt-card.danger {
+  border: 1px solid rgba(220, 38, 38, 0.35);
+  background: linear-gradient(
+    135deg,
+    rgba(220, 38, 38, 0.08),
+    rgba(220, 38, 38, 0.02)
+  );
+}
+
+.dt-placeholder-block {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  border: 1px solid rgba(200, 180, 120, 0.2);
+  color: #475569;
+}

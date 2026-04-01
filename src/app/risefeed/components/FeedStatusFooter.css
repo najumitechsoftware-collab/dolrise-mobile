@@ -1,0 +1,12 @@
+.feed-status-footer {
+  position: sticky;
+  bottom: 72px;
+  margin: 16px;
+  padding: 12px 16px;
+  background: #fff9e8;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 14px;
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+}

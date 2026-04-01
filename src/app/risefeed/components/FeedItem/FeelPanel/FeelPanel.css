@@ -1,0 +1,100 @@
+.feel-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.feel-panel {
+  width: 92%;
+  max-width: 420px;
+
+  /* 👇 MUHIMMI */
+  max-height: 75vh;
+  overflow-y: auto;
+
+  background: #fffdf7;
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+  animation: feel-pop 0.25s ease;
+}
+
+.feel-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.feel-panel::-webkit-scrollbar-thumb {
+  background: #e6dcc3;
+  border-radius: 6px;
+}
+
+.feel-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+@keyframes feel-pop {
+  from {
+    transform: scale(0.96);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.feel-title {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 14px;
+  color: #333;
+}
+
+.feel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.feel-item {
+  background: #faf7ef;
+  border: 1px solid #f0ead8;
+  border-radius: 14px;
+  padding: 10px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.feel-item:hover {
+  background: #fff;
+  transform: translateY(-1px);
+}
+
+.feel-emoji {
+  font-size: 22px;
+}
+
+.feel-label {
+  font-size: 12px;
+  color: #555;
+}
+
+.feel-more {
+  margin-top: 14px;
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: #b08b2e;
+  font-weight: 600;
+  cursor: pointer;
+}

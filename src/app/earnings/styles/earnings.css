@@ -1,0 +1,245 @@
+/* ===============================
+   🌕 EARNINGS PAGE (PREMIUM UI)
+=============================== */
+
+.earnings-page {
+  padding: 20px;
+  background: #fdf6e9;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* ===============================
+   HEADER
+=============================== */
+.earnings-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.earnings-header h1 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.earnings-header p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* ===============================
+   CARDS
+=============================== */
+.earnings-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.card span {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.card strong {
+  display: block;
+  font-size: 18px;
+  margin-top: 4px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.card.highlight {
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+}
+
+/* ===============================
+   MOVE SECTION
+=============================== */
+.move-section {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.move-section p {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.move-section button {
+  background: #111827;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.move-section button:hover {
+  transform: scale(1.04);
+}
+
+.move-section button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ===============================
+   HISTORY
+=============================== */
+.earnings-history h3 {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* ===============================
+   HISTORY CARD (MAIN)
+=============================== */
+.history-card {
+  display: flex;
+  gap: 12px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: 0.2s ease;
+}
+
+.history-card:hover {
+  transform: translateY(-2px);
+}
+
+/* ===============================
+   MEDIA (LEFT)
+=============================== */
+.history-media {
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #e5e7eb;
+  flex-shrink: 0;
+}
+
+.history-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.media-placeholder {
+  width: 100%;
+  height: 100%;
+  background: #d1d5db;
+}
+
+/* ===============================
+   CONTENT (RIGHT)
+=============================== */
+.history-content {
+  flex: 1;
+}
+
+/* TOP */
+.history-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history-top strong {
+  font-size: 16px;
+  font-weight: 700;
+  color: #16a34a; /* green */
+}
+
+/* STATUS */
+.status {
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.status.available {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status.moved {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.status.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+/* TITLE */
+.history-title {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 4px;
+  color: #111827;
+}
+
+/* CAPTION */
+.history-caption {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 2px;
+  line-height: 1.3;
+}
+
+/* META */
+.history-meta {
+  font-size: 11px;
+  color: #9ca3af;
+  margin-top: 4px;
+}
+
+/* TIME */
+.history-time {
+  font-size: 11px;
+  color: #9ca3af;
+  margin-top: 2px;
+}
+
+/* ===============================
+   STATES
+=============================== */
+.earnings-loader,
+.earnings-error,
+.earnings-empty {
+  text-align: center;
+  margin-top: 60px;
+  color: #6b7280;
+}
+
+.earnings-error button {
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: none;
+  background: #111827;
+  color: white;
+}

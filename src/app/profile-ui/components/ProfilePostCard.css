@@ -1,0 +1,81 @@
+.feed-card {
+  background: #f7fbff;
+  border-radius: 20px;
+  padding: 16px;
+  margin-bottom: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+/* HEADER */
+.feed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feed-user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e5f0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.meta strong {
+  display: block;
+  font-size: 14px;
+}
+
+.mood {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+/* CONTENT */
+.feed-content {
+  margin: 14px 0;
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #1f2937;
+  white-space: pre-wrap;
+}
+
+/* REACTIONS */
+.feed-reactions {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding-top: 10px;
+}
+
+.reaction {
+  background: none;
+  border: none;
+  font-size: 13.5px;
+  color: #374151;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.reaction span {
+  color: #6b7280;
+}

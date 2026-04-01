@@ -1,0 +1,98 @@
+.landing-wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(
+    to bottom,
+    #f7f5ef, /* Milk color */
+    #d8f2ff  /* Light sea blue */
+  );
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* 🔥 MAIN LAYOUT */
+.landing-center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  /* Logo ya hau sama kadan, rubutu ya biyo shi */
+  padding-top: 24px;
+}
+
+/* LOGO (actual size handled in component) */
+.landing-logo {
+  width: 90px;
+  margin-bottom: 0;
+}
+
+/* 🔥 TITLE — THIS IS THE KEY FIX */
+.landing-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #0d1b2a; /* Deep sea */
+
+  /* ❗ rubutu ya hau sosai kusa da logo */
+  margin-top: -56px;
+  margin-bottom: 6px;
+}
+
+.gold {
+  color: #d4af37;
+  font-weight: 700;
+}
+
+/* MAIN EMOTIONAL TEXT */
+.landing-text {
+  max-width: 420px;
+  color: #334155;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-top: 0;
+}
+
+/* SUB LINE */
+.landing-sub {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #1f2937;
+}
+
+/* FOOTER */
+.landing-footer {
+  padding: 14px 0;
+  font-size: 13px;
+  color: #475569;
+  background: rgba(255, 255, 255, 0.4);
+  border-top: 1px solid #e8e5dd;
+}
+
+/* LOADING */
+.loading-text {
+  color: #d4af37;
+  font-size: 16px;
+  opacity: 0.9;
+  animation: pulse 0.9s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.landing-link {
+  color: #0d1b2a;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.landing-link:hover {
+  color: #d4af37;
+}

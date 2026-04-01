@@ -1,0 +1,47 @@
+.kyc-page {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.kyc-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.kyc-primary {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: #d4af37;
+  color: #000;
+  font-weight: 600;
+}
+
+.kyc-checklist li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.kyc-checklist li.done {
+  color: green;
+}
+
+.kyc-camera-box {
+  margin-top: 16px;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  background: #000;
+}
+
+.kyc-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+

@@ -1,0 +1,96 @@
+/* BACK BUTTON */
+.notifications-back {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  cursor: pointer;
+  color: #444;
+}
+
+.notifications-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.notifications-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* HEADER */
+.notifications-header {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.notifications-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* TABS */
+.notification-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.notification-tabs button {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: none;
+  background: #f2f2f2;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.notification-tabs button.active {
+  background: #d4af37;
+  color: white;
+}
+
+/* LIST */
+.notifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* CARD */
+.notification-card {
+  background: white;
+  padding: 14px;
+  border-radius: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  cursor: pointer;
+}
+
+.notification-card.unread {
+  background: #fff7e9;
+}
+
+.notification-card .message {
+  font-size: 14px;
+}
+
+.notification-card .icon {
+  margin-right: 6px;
+}
+
+.notification-card .time {
+  font-size: 12px;
+  opacity: 0.5;
+  margin-top: 4px;
+}
+
+.muted {
+  text-align: center;
+  opacity: 0.6;
+}

@@ -1,0 +1,5 @@
+/* legacy disabled – kept only to avoid import crash */
+.profile-wrapper {
+  background: #faf3dd;
+  min-height: 100vh;
+}

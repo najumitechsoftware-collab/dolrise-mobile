@@ -1,0 +1,109 @@
+.dt-overview {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  background: #ffffff;
+}
+
+.dt-overview-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.dt-overview-header p {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.dt-card {
+  background: #fafafa;
+  border-radius: 14px;
+  padding: 18px;
+  border: 1px solid #f1f1f1;
+}
+
+.dt-card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #111827;
+}
+
+.dt-card p {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.dt-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dt-list li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+.dt-list strong {
+  font-size: 14px;
+  color: #111827;
+}
+
+.dt-list span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.highlight {
+  background: #f9fafb;
+  border-left: 4px solid #d4af37;
+}
+
+.highlight ul {
+  padding-left: 18px;
+}
+
+.highlight li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+.dt-privacy-link {
+  text-align: center;
+}
+
+.dt-privacy-link p {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.dt-privacy-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 30px;
+  background: #1e3a8a;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.dt-privacy-btn:hover {
+  background: #1c3378;
+}
+
+.dt-close {
+  font-size: 13px;
+  color: #6b7280;
+  text-align: center;
+  padding-top: 10px;
+}

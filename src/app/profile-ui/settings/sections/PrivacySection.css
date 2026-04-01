@@ -1,0 +1,52 @@
+.privacy-root {
+  padding: 16px;
+}
+
+.privacy-header h2 {
+  margin: 0;
+}
+
+.privacy-header p {
+  color: #666;
+  margin-top: 4px;
+}
+
+.loading,
+.saving {
+  text-align: center;
+  margin-top: 32px;
+  color: #888;
+}
+
+.error {
+  color: #c0392b;
+  text-align: center;
+}
+
+.privacy-body {
+  margin-top: 24px;
+}
+
+.privacy-section {
+  background: #fff;
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+.privacy-section h4 {
+  margin-bottom: 10px;
+}
+
+.privacy-section select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}

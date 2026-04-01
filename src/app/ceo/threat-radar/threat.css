@@ -1,0 +1,239 @@
+/* ===============================
+   GLOBAL
+=============================== */
+
+.threat-container {
+  background: #020617;
+  color: #e2e8f0;
+  min-height: 100vh;
+  padding: 24px;
+  font-family: "Inter", sans-serif;
+}
+
+/* ===============================
+   HEADER
+=============================== */
+
+.threat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.threat-header h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.threat-header button {
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+.threat-header button:hover {
+  opacity: 0.85;
+}
+
+/* ===============================
+   ALERT BAR
+=============================== */
+
+.alert-bar {
+  background: linear-gradient(to right, #0f172a, #020617);
+  border: 1px solid #1e293b;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: #facc15;
+}
+
+/* ===============================
+   KPI
+=============================== */
+
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.kpi {
+  background: linear-gradient(145deg, #020617, #0f172a);
+  border: 1px solid #1e293b;
+  padding: 18px;
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+.kpi:hover {
+  border-color: #38bdf8;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.1);
+}
+
+.kpi span {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.kpi h2 {
+  font-size: 22px;
+  margin-top: 6px;
+}
+
+/* ===============================
+   CARD
+=============================== */
+
+.card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #f1f5f9;
+}
+
+/* ===============================
+   ROW
+=============================== */
+
+.row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 120px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.row:hover {
+  background: #0f172a;
+}
+
+/* ===============================
+   POST TEXT
+=============================== */
+
+.post {
+  font-size: 13px;
+  color: #cbd5f5;
+}
+
+/* ===============================
+   BADGE
+=============================== */
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.badge.red {
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+}
+
+.badge.orange {
+  background: rgba(249, 115, 22, 0.15);
+  color: #fb923c;
+}
+
+.badge.yellow {
+  background: rgba(250, 204, 21, 0.15);
+  color: #facc15;
+}
+
+/* ===============================
+   ACTION BUTTON
+=============================== */
+
+.action {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  padding: 6px 10px;
+  border-radius: 8px;
+  color: #e2e8f0;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.action:hover {
+  background: #38bdf8;
+  color: #020617;
+}
+
+/* ===============================
+   SPIKE GRID
+=============================== */
+
+.spike-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  font-size: 13px;
+}
+
+.spike-grid div {
+  background: #0f172a;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* ===============================
+   SCROLLBAR (PREMIUM)
+=============================== */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
+
+/* ===============================
+   ANIMATION
+=============================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.card,
+.kpi,
+.row {
+  animation: fadeIn 0.3s ease;
+}

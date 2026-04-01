@@ -1,0 +1,8 @@
+.layout-wrapper {
+  min-height: 100vh;
+  background: #F8FBFA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui;
+}

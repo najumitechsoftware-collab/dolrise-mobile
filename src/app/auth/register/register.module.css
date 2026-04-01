@@ -1,0 +1,218 @@
+/* =====================================================
+   PAGE BACKGROUND — MILK
+===================================================== */
+.pageWrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    #fbf9f4,
+    #f4f1ea
+  );
+}
+
+/* =====================================================
+   CARD — CLEAN & COMPACT
+===================================================== */
+.formCard {
+  width: 92%;
+  max-width: 420px;
+  background: #fffdf8;
+  border-radius: 22px;
+  padding: 16px 20px 18px; /* 🔧 compact */
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.06),
+    0 4px 10px rgba(0, 0, 0, 0.03);
+  border: 1px solid #eadfc9;
+}
+
+/* =====================================================
+   HEADER — MINIMAL
+===================================================== */
+.headerBox {
+  text-align: center;
+  margin-bottom: 6px; /* 🔧 reduce gap */
+}
+
+/* LOGO */
+.logoWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4px; /* 🔧 tighter */
+}
+
+/* TITLE */
+.title {
+  font-size: 19px;
+  font-weight: 600;
+  color: #d4af37;
+  margin-top: -6px; /* 🔧 lift */
+}
+
+/* SUBTITLE */
+.subtitle {
+  font-size: 12.8px;
+  color: #6b6b6b;
+  line-height: 1.4;
+  margin-top: 2px;
+}
+
+/* =====================================================
+   FORM
+===================================================== */
+.form {
+  margin-top: 4px; /* 🔧 very compact */
+}
+
+.label {
+  font-size: 12.8px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #3f3f3f;
+}
+
+/* =====================================================
+   INPUT WRAPPER
+===================================================== */
+.inputWrap {
+  position: relative;
+  margin-bottom: 10px; /* 🔧 reduced */
+}
+
+/* INPUT FIELD */
+.input {
+  width: 100%;
+  padding: 11px 42px 11px 38px;
+  border-radius: 14px;
+  border: 1px solid #e3dac2;
+  background: linear-gradient(
+    to bottom,
+    #fffaf0,
+    #fdf3dc
+  );
+  font-size: 14px;
+  color: #1f1f1f;
+  transition: all 0.2s ease;
+}
+
+.input::placeholder {
+  color: #9b9b9b;
+}
+
+.input:focus {
+  border-color: #d4af37;
+  background: #fffdf6;
+  box-shadow:
+    inset 0 0 0 1px rgba(212, 175, 55, 0.25),
+    0 0 0 3px rgba(212, 175, 55, 0.15);
+  outline: none;
+}
+
+/* ICON */
+.inputWrap svg {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #d4af37;
+  pointer-events: none;
+}
+
+/* =====================================================
+   PASSWORD EYE — ONLY ON INTERACTION
+===================================================== */
+.eyeBtn {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 4px;
+  color: #7a7a7a;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+/* show eye only when user interacts */
+.inputWrap:focus-within .eyeBtn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* =====================================================
+   TERMS — CALM & PROFESSIONAL
+===================================================== */
+.termsRow {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.termsRow input {
+  margin-top: 3px;
+  accent-color: #d4af37;
+}
+
+.termsText {
+  font-size: 12.3px;
+  color: #555;
+  line-height: 1.45;
+}
+
+/* =====================================================
+   ERROR
+===================================================== */
+.error {
+  text-align: center;
+  color: #c53030;
+  font-size: 12.3px;
+  margin-top: 6px;
+}
+
+/* =====================================================
+   BUTTON — PREMIUM & TIGHT
+===================================================== */
+.submitBtn {
+  width: 100%;
+  margin-top: 10px; /* 🔧 reduced gap */
+  padding: 12px;
+  border-radius: 16px;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(
+    to right,
+    #c9a227,
+    #e7c65f,
+    #c9a227
+  );
+  border: none;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.submitBtn:active {
+  transform: scale(0.97);
+}
+
+.submitBtn:disabled {
+  background: #d4af37aa;
+}
+
+/* =====================================================
+   FOOTER — SUBTLE
+===================================================== */
+.footer {
+  text-align: center;
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid #eadfc9;
+  font-size: 11.5px;
+  color: #777;
+}

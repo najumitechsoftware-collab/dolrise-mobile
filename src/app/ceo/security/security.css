@@ -1,0 +1,101 @@
+.security-wrapper {
+  color: white;
+  padding: 20px;
+}
+
+.sec-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* SUMMARY CARDS */
+.sec-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.sec-card {
+  padding: 20px;
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.sec-card p {
+  color: #ccc;
+}
+
+.sec-card h2 {
+  font-size: 22px;
+  margin-top: 8px;
+}
+
+/* BLOCK IP PANEL */
+.block-panel {
+  background: #111;
+  border: 1px solid #222;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.block-panel input {
+  width: 100%;
+  background: #0d0d0d;
+  border: 1px solid #333;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  color: white;
+}
+
+.block-panel button {
+  background: #b70000;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* TABLES */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #222;
+}
+
+th {
+  text-align: left;
+  background: #111;
+}
+
+.ua {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* PAGINATION */
+.pagination {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.pagination button {
+  background: #111;
+  border: 1px solid #333;
+  padding: 8px 12px;
+  border-radius: 6px;
+}

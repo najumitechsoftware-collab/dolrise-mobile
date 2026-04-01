@@ -1,0 +1,233 @@
+/* -----------------------------------------------------------
+   🌅 DolRise RiseFeed Emotional UI — FULL PREMIUM VERSION
+   Clean • Smooth • Modern • Balanced
+----------------------------------------------------------- */
+
+/* ========================
+   WRAPPER
+========================= */
+.feed-wrapper {
+  min-height: 100vh;
+  background: #FCF8F2;
+  padding-bottom: 100px;
+  color: #6A5C3A;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ========================
+   LOADING
+========================= */
+.feed-loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FCF8F2;
+  color: #D4AF37;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* ========================
+   TOP BAR
+========================= */
+.feed-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: #FCF8F2;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #E8DECF;
+}
+
+.feed-logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #D4AF37;
+}
+
+/* ========================
+   TABS
+========================= */
+.feed-tabs {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  border-bottom: 1px solid #E8DECF;
+  background: #FCF8F2;
+}
+
+.feed-tabs button {
+  background: none;
+  border: none;
+  color: #8B7A5A;
+  padding: 6px 10px;
+  font-size: 0.95rem;
+}
+
+.feed-tabs .active {
+  color: #D4AF37;
+  font-weight: 700;
+  border-bottom: 2px solid #D4AF37;
+}
+
+/* ========================
+   POST CARD
+========================= */
+.post-card {
+  width: 95%;
+  margin: 18px auto;
+  background: white;
+  border: 2px solid #E8DECF;
+  padding: 16px;
+  border-radius: 22px;
+  box-shadow: 0 3px 10px rgba(212, 175, 55, 0.08);
+  transition: 0.25s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(212, 175, 55, 0.16);
+}
+
+/* Fade animation */
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* ========================
+   HEADER (User)
+========================= */
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.post-user {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.avatar-wrapper {
+  margin-right: 14px;
+}
+
+.avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 2px solid #F1E7D4;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.25);
+}
+
+.username-link,
+.post-user h4 {
+  font-weight: 700;
+  color: #6A5C3A;
+  font-size: 1rem;
+}
+
+.mood-tag {
+  display: inline-block;
+  padding: 3px 7px;
+  background: #F8ECCC;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  margin-top: 3px;
+  color: #6A5C3A;
+}
+
+/* Follow button */
+.flowlink-btn {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #8B7A5A;
+}
+
+.flowlink-btn.following {
+  color: #D4AF37;
+}
+
+/* ========================
+   POST CONTENT
+========================= */
+.post-content {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #4A4231;
+  margin: 14px 0;
+}
+
+/* ========================
+   ACTIONS (Feel / Reflect / ReEcho)
+========================= */
+.post-reactions {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid #E8DECF;
+}
+
+.post-reactions button {
+  background: none;
+  border: none;
+  font-size: 0.95rem;
+  color: #6A5C3A;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.post-reactions button:hover {
+  color: #D4AF37;
+}
+
+.post-reactions .count {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* ========================
+   BOTTOM NAV
+========================= */
+.dolbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  border-top: 1px solid #E8DECF;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  z-index: 30;
+}
+
+.dolbar a {
+  font-size: 1.4rem;
+  color: #8B7A5A;
+}
+
+.dolbar a.active {
+  color: #D4AF37;
+  font-weight: 700;
+}
+
+.dolbar.hide {
+  transform: translateY(120%);
+  transition: transform 0.4s ease;
+}

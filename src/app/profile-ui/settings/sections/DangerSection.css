@@ -1,0 +1,203 @@
+/* ======================================================
+   DANGER ZONE — LUXURY SYSTEM
+   DolRise Premium Style
+====================================================== */
+
+/* ===============================
+   WRAPPER
+=============================== */
+
+.danger-wrapper {
+  padding: 24px;
+  max-width: 640px;
+  margin: 0 auto;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ===============================
+   HEADER
+=============================== */
+
+.danger-header {
+  margin-bottom: 32px;
+}
+
+.danger-back-btn {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  color: #777;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.danger-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.danger-header p {
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* ===============================
+   CONTENT AREA
+=============================== */
+
+.danger-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ===============================
+   CARD BASE
+=============================== */
+
+.danger-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f3f4f6;
+  transition: all 0.3s ease;
+}
+
+.danger-card:hover {
+  transform: translateY(-2px);
+}
+
+/* ===============================
+   EXTREME CARD (DELETE)
+=============================== */
+
+.danger-card.extreme {
+  background: #fff5f5;
+  border: 1px solid #f3caca;
+}
+
+/* ===============================
+   TITLES
+=============================== */
+
+.danger-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.danger-card p {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+/* ===============================
+   BUTTONS
+=============================== */
+
+.danger-outline-btn {
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: 2px solid #a1845c;
+  background: transparent;
+  color: #a1845c;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.danger-outline-btn:hover {
+  background: #a1845c;
+  color: white;
+}
+
+.danger-btn {
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #b00020, #d32f2f);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.danger-btn:hover {
+  opacity: 0.9;
+}
+
+/* ======================================================
+   BOTTOM SHEET SYSTEM
+====================================================== */
+
+/* ===============================
+   OVERLAY
+=============================== */
+
+.danger-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 9999;
+}
+
+/* ===============================
+   SHEET
+=============================== */
+
+.danger-sheet {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+
+  background: #ffffff;
+  border-radius: 24px 24px 0 0;
+
+  padding: 24px;
+
+  transform: translateY(100%);
+  animation: sheetUp 0.35s ease forwards;
+}
+
+/* ===============================
+   ANIMATION
+=============================== */
+
+@keyframes sheetUp {
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   MOBILE SAFE AREA
+=============================== */
+
+@media (max-width: 640px) {
+  .danger-wrapper {
+    padding: 20px;
+  }
+
+  .danger-sheet {
+    border-radius: 20px 20px 0 0;
+  }
+}

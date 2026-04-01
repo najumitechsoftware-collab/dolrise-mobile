@@ -1,0 +1,84 @@
+/* ===============================
+   CANCEL DELETION SHEET
+================================= */
+
+.cancel-sheet {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: #fff5f5;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+
+  padding: 28px 22px 32px;
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.08);
+
+  animation: slideUp 0.35s ease;
+}
+
+.cancel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.cancel-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #b91c1c;
+}
+
+.cancel-input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+
+  border-radius: 14px;
+  border: 1px solid #f0c2c2;
+  background: white;
+
+  font-size: 15px;
+}
+
+.cancel-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.cancel-btn-primary {
+  width: 100%;
+  padding: 14px;
+  border-radius: 16px;
+  border: none;
+
+  background: #b91c1c;
+  color: white;
+  font-weight: 600;
+
+  transition: 0.2s ease;
+}
+
+.cancel-btn-primary:disabled {
+  opacity: 0.6;
+}
+
+.cancel-error {
+  color: #b91c1c;
+  font-size: 14px;
+  margin-top: 14px;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

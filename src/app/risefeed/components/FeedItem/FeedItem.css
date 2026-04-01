@@ -1,0 +1,282 @@
+/* ======================================================
+   DOLRISE FEED — FULL WIDTH LUXURY SYSTEM
+   Edge-to-Edge • Calm • Premium • Cinematic Separation
+====================================================== */
+
+/* =========================
+   ROOT POST (NO CONTAINER)
+========================= */
+
+.feed-card-v2 {
+  position: relative;
+  width: 100%;
+  padding: 26px 0 10px;
+  margin: 0;
+  background: transparent;
+  overflow: hidden;
+  animation: riseFade 0.45s ease;
+}
+
+/* =========================
+   SOFT POST SEPARATION
+   (Instead of card borders)
+========================= */
+
+.feed-card-v2::after {
+  content: "";
+  display: block;
+  width: 92%;
+  height: 1px;
+  margin: 34px auto 0;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(180, 160, 110, 0.25),
+    transparent
+  );
+  opacity: 0.6;
+}
+
+/* =========================
+   DIAGONAL OCEAN BLUE LAYER
+========================= */
+
+.feed-card-v2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75%;
+  height: 60%;
+  background: linear-gradient(
+    135deg,
+    rgba(20, 60, 95, 0.10),
+    rgba(20, 60, 95, 0.03)
+  );
+  clip-path: polygon(45% 0%, 100% 0%, 100% 100%);
+  pointer-events: none;
+}
+
+/* =========================
+   SOFT GOLD GLOW (BOTTOM LEFT)
+========================= */
+
+.feed-card-v2 .gold-glow {
+  position: absolute;
+  bottom: -90px;
+  left: -90px;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(
+    circle,
+    rgba(212, 175, 55, 0.12),
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.feed-header-wrapper {
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 16px;
+}
+
+.feed-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.feed-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #ebe7df;
+  border: 1px solid rgba(212,175,55,0.25);
+}
+
+.feed-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feed-user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.feed-username {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: #1c1c1c;
+}
+
+.feed-mood {
+  font-size: 12px;
+  color: #6e6e6e;
+  margin-top: 2px;
+}
+
+/* =========================
+   MOOD BADGE
+========================= */
+
+.mood-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  background: rgba(20,60,95,0.08);
+  border: 1px solid rgba(20,60,95,0.25);
+  color: #143c5f;
+}
+
+/* =========================
+   FLOW BUTTON
+========================= */
+
+.flow-btn {
+  padding: 6px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(212,175,55,0.6);
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.6),
+    rgba(255,255,255,0.2)
+  );
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #9a7b23;
+  backdrop-filter: blur(6px);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.7),
+    0 4px 12px rgba(212,175,55,0.15);
+  transition: all 0.25s ease;
+}
+
+.flow-btn:hover {
+  background: linear-gradient(135deg, #d4af37, #c59d2e);
+  color: #111;
+  transform: translateY(-1px);
+}
+
+/* =========================
+   CAPTION (Padded)
+========================= */
+
+.feed-caption {
+  padding: 0 18px;
+  margin: 18px 0;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #2a2a2a;
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   MEDIA — EDGE TO EDGE
+========================= */
+
+.feed-media {
+  width: 100%;
+  margin: 18px 0;
+  overflow: hidden;
+  background: #000;
+  position: relative;
+  z-index: 2;
+}
+
+.feed-media img,
+.feed-media video {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .feed-media img,
+  .feed-media video {
+    height: 360px;
+  }
+}
+
+/* Prevent overly tall media */
+.feed-media video,
+.feed-media img {
+  max-height: 65vh;
+}
+
+/* =========================
+   ACTION BAR
+========================= */
+
+.reactions-row {
+  padding: 16px 18px 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.react-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0,0,0,0.05);
+  font-size: 13px;
+  font-weight: 500;
+  color: #444;
+  transition: all 0.2s ease;
+}
+
+.react-btn:hover {
+  background: rgba(212,175,55,0.15);
+  border-color: rgba(212,175,55,0.35);
+}
+
+.react-icon {
+  font-size: 17px;
+}
+
+.react-btn.felt {
+  background: rgba(212,175,55,0.18);
+  border-color: rgba(212,175,55,0.45);
+}
+
+/* =========================
+   ENTRY ANIMATION
+========================= */
+
+@keyframes riseFade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

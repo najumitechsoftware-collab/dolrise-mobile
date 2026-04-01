@@ -1,0 +1,53 @@
+/* ======================================================
+   INDIA PRIVACY POLICY — DOLRISE
+   Legal • Calm • Human-first
+====================================================== */
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 3.25rem 1.5rem 4rem;
+}
+
+.header {
+  margin-bottom: 2.75rem;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+  color: #111;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.section {
+  margin-bottom: 2.4rem;
+}
+
+.section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.65rem;
+  color: #1a1a1a;
+}
+
+.section p {
+  font-size: 0.97rem;
+  line-height: 1.65;
+  color: #444;
+  margin-bottom: 0.9rem;
+}
+
+.notice {
+  background: rgba(138, 106, 31, 0.06);
+  border: 1px solid rgba(138, 106, 31, 0.18);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  font-size: 0.9rem;
+  color: #5f4a18;
+}

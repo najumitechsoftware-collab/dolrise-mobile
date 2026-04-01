@@ -1,0 +1,89 @@
+/* ======================================================
+   FAQ SECTION — DOLRISE (STATIC PREMIUM)
+====================================================== */
+
+.faq-sheet {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  background: linear-gradient(180deg, #fffdf6, #f8f1dc);
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+/* ================= HEADER ================= */
+
+.faq-header {
+  padding: 20px 16px 16px;
+  border-bottom: 1px solid #eadfae;
+  background: rgba(255, 253, 246, 0.95);
+  backdrop-filter: blur(8px);
+}
+
+.faq-header button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #9b7a2f;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.faq-header h2 {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+}
+
+.faq-header p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 6px;
+}
+
+/* ================= BODY ================= */
+
+.faq-body {
+  padding: 18px 16px 120px;
+  overflow-y: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ================= FAQ ITEM ================= */
+
+.faq-item {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #eadfae;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  padding: 18px 16px;
+}
+
+/* Question */
+.faq-question-text {
+  font-size: 15px;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 6px;
+}
+
+/* Answer */
+.faq-answer-text {
+  font-size: 14px;
+  line-height: 1.65;
+  color: #4b5563;
+}

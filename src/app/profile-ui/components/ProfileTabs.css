@@ -1,0 +1,91 @@
+/* =========================================================
+   🌕 DolRise Profile Tabs — Premium SaaS Buttons
+   Pill Style • Milk + Gold • Facebook-level
+========================================================= */
+
+.profile-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 14px;                     /* 🔥 kusa da juna */
+  padding: 16px 16px 10px;
+  background: transparent;
+}
+
+/* ======================
+   TAB BUTTON (BASE)
+====================== */
+.profile-tab {
+  appearance: none;
+  background: #ffffff;           /* milk button */
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: #6b7280;
+
+  padding: 10px 18px;
+  border-radius: 999px;          /* 🔥 pill */
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  position: relative;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.12s ease;
+}
+
+/* ======================
+   HOVER (PREMIUM FEEL)
+====================== */
+.profile-tab:hover {
+  background: #f7f2e4;           /* milk-soft */
+  color: #1f2937;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* ======================
+   ACTIVE TAB (GOLD)
+====================== */
+.profile-tab.active {
+  background: linear-gradient(
+    135deg,
+    #d4af37 0%,
+    #c9a64d 50%,
+    #9b7a2f 100%
+  );
+  color: #ffffff;
+  border-color: transparent;
+
+  box-shadow:
+    0 10px 22px rgba(212, 175, 55, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+/* ======================
+   ACTIVE PRESS
+====================== */
+.profile-tab.active:active {
+  transform: scale(0.97);
+}
+
+/* ======================
+   INACTIVE PRESS
+====================== */
+.profile-tab:active {
+  transform: scale(0.96);
+}
+
+/* ======================
+   MOBILE SAFETY
+====================== */
+@media (max-width: 420px) {
+  .profile-tabs {
+    gap: 10px;
+  }
+
+  .profile-tab {
+    padding: 9px 14px;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,109 @@
+.audit-page {
+  max-width: 1400px;
+  margin: auto;
+  padding: 40px;
+  color: #fff;
+}
+
+.audit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.audit-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.audit-header p {
+  color: #888;
+}
+
+.filters select {
+  background: #111;
+  border: 1px solid #222;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+.audit-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 30px 0;
+}
+
+.card {
+  background: #0f0f0f;
+  border: 1px solid #1f1f1f;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.card span {
+  color: #888;
+  font-size: 14px;
+}
+
+.card strong {
+  font-size: 28px;
+}
+
+.card.danger {
+  border-color: #ff4d4d;
+  color: #ff4d4d;
+}
+
+.audit-table {
+  background: #0f0f0f;
+  border: 1px solid #1f1f1f;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.table-head,
+.table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 3fr 1.5fr 1.5fr 1fr 1.5fr;
+  padding: 14px 20px;
+}
+
+.table-head {
+  background: #111;
+  font-size: 13px;
+  color: #777;
+}
+
+.table-row {
+  border-top: 1px solid #1f1f1f;
+  font-size: 14px;
+}
+
+.table-row:hover {
+  background: #151515;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  width: fit-content;
+}
+
+.badge.info {
+  background: #1e3a8a33;
+  color: #60a5fa;
+}
+
+.badge.warning {
+  background: #78350f33;
+  color: #facc15;
+}
+
+.badge.critical {
+  background: #7f1d1d33;
+  color: #f87171;
+}

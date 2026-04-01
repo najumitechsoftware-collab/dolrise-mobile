@@ -1,0 +1,118 @@
+.profile-about-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 24px 16px 60px;
+}
+
+/* ================= ESSENCE ================= */
+
+.about-essence-card {
+  background: linear-gradient(145deg, #f6f1e8, #efe7db);
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.about-bio-large {
+  font-size: 20px;
+  line-height: 1.7;
+  font-weight: 500;
+  color: #2c2c2c;
+  margin-bottom: 18px;
+}
+
+.about-identity-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 14px;
+  color: #7a6f5c;
+}
+
+.about-profession {
+  font-weight: 600;
+  color: #b8922e;
+}
+
+.about-pronouns {
+  background: #e7dcc8;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.about-joined {
+  opacity: 0.7;
+}
+
+/* ================= PRESENCE ================= */
+
+.about-presence-card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+}
+
+.about-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.about-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.about-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #b8922e;
+}
+
+.about-value {
+  font-size: 15px;
+  color: #333;
+}
+
+.about-link {
+  font-size: 15px;
+  color: #b8922e;
+  text-decoration: none;
+}
+
+.about-link:hover {
+  text-decoration: underline;
+}
+
+/* ================= FLOW SIGNATURE ================= */
+
+.about-flow-card {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(145deg, #efe4d3, #e7dac6);
+  padding: 24px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.flow-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.flow-number {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2c2c2c;
+}
+
+.flow-label {
+  font-size: 13px;
+  color: #7a6f5c;
+}

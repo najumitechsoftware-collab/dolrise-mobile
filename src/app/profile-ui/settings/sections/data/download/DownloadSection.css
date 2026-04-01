@@ -1,0 +1,66 @@
+.download-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.download-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+}
+
+.download-card h4 {
+  margin-bottom: 10px;
+}
+
+.download-card p {
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.primary-btn {
+  background: #2f6fed;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+}
+
+.primary-btn:hover {
+  opacity: 0.9;
+}
+
+.status-block {
+  margin-top: 15px;
+}
+
+.status {
+  font-weight: 600;
+}
+
+.status.pending {
+  color: #c58a00;
+}
+
+.status.processing {
+  color: #2f6fed;
+}
+
+.status.completed {
+  color: #0f8a3e;
+}
+
+.dt-error {
+  background: #ffe5e5;
+  padding: 10px;
+  border-radius: 8px;
+  color: #b30000;
+  margin-bottom: 15px;
+}

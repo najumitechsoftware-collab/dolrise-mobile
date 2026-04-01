@@ -1,0 +1,356 @@
+/* ==========================================================
+   DOLRISE WALLET — PREMIUM FINTECH SaaS DESIGN
+   Calm • Soft Depth • Luxury Minimal
+========================================================== */
+
+.wallet-page {
+  padding: 28px 20px 110px;
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #f7f6f3 0%,
+    #f1efe9 100%
+  );
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* ===============================
+   HEADER
+=============================== */
+
+.wallet-page h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1f2b;
+  margin-bottom: 6px;
+}
+
+.wallet-page p {
+  color: #6c7383;
+  font-size: 14px;
+}
+
+/* ===============================
+   BALANCE CARD
+=============================== */
+
+.wallet-balance-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border-radius: 22px;
+  padding: 26px;
+  margin-top: 24px;
+  box-shadow:
+    0 8px 30px rgba(20, 25, 40, 0.05),
+    inset 0 1px 0 rgba(255,255,255,0.5);
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+.balance-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.balance-label {
+  font-size: 14px;
+  color: #6c7383;
+}
+
+.balance-fiat {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0d1321;
+}
+
+.balance-nc {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 14px 0 10px;
+  color: #111827;
+  letter-spacing: -1px;
+}
+
+.balance-protected {
+  font-size: 14px;
+  color: #b08a2e;
+  font-weight: 500;
+}
+
+.balance-rate {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #8b93a7;
+}
+
+/* ===============================
+   ACTION BUTTONS
+=============================== */
+
+.wallet-actions-section {
+  margin-top: 28px;
+}
+
+.wallet-actions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+
+.wallet-btn {
+  padding: 14px 12px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  border: none;
+}
+
+/* Primary */
+.wallet-btn.primary {
+  background: linear-gradient(
+    135deg,
+    #111827,
+    #1f2937
+  );
+  color: white;
+}
+
+.wallet-btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* Gold Withdraw */
+.wallet-btn.gold {
+  background: linear-gradient(
+    135deg,
+    #d4af37,
+    #c89b1d
+  );
+  color: #111827;
+}
+
+.wallet-btn.gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(200, 155, 29, 0.25);
+}
+
+/* Outline */
+.wallet-btn.outline {
+  background: white;
+  border: 1px solid #e3e6ee;
+  color: #1a1f2b;
+}
+
+.wallet-btn.outline:hover {
+  background: #f9fafc;
+}
+
+/* Disabled */
+.wallet-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ===============================
+   KYC PANEL
+=============================== */
+
+.wallet-kyc-soft-panel {
+  margin-top: 20px;
+  background: #fff9f2;
+  border: 1px solid #f5e4c5;
+  padding: 18px;
+  border-radius: 16px;
+  display: flex;
+  gap: 12px;
+}
+
+.wallet-kyc-icon {
+  font-size: 20px;
+}
+
+.wallet-kyc-link {
+  display: inline-block;
+  margin-top: 6px;
+  color: #c89b1d;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.wallet-kyc-link:hover {
+  text-decoration: underline;
+}
+
+/* ===============================
+   RECENT ACTIVITY
+=============================== */
+
+.wallet-activity-card {
+  margin-top: 32px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+}
+
+.wallet-activity-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.wallet-activity-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f2f6;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wallet-activity-item:last-child {
+  border-bottom: none;
+}
+
+.activity-amount {
+  font-weight: 600;
+  color: #111827;
+}
+
+.activity-date {
+  font-size: 12px;
+  color: #8b93a7;
+}
+
+/* ===============================
+   BOTTOM NAV
+=============================== */
+
+.wallet-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid #eceff4;
+  display: flex;
+  justify-content: space-around;
+  padding: 14px 0;
+  font-size: 13px;
+}
+
+.wallet-bottom-nav button {
+  background: none;
+  border: none;
+  font-weight: 600;
+  color: #6c7383;
+  cursor: pointer;
+}
+
+.wallet-bottom-nav button.active {
+  color: #c89b1d;
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+
+@media (max-width: 420px) {
+  .balance-nc {
+    font-size: 36px;
+  }
+
+  .wallet-actions-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* ===============================
+   PREMIUM LOADER
+=============================== */
+
+.wallet-loader-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    #f7f6f3 0%,
+    #f1efe9 100%
+  );
+}
+
+.wallet-loader-circle {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 4px solid rgba(0,0,0,0.08);
+  border-top: 4px solid #c89b1d;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===============================
+   ACTIVITY CARD PREMIUM
+=============================== */
+
+.wallet-activity-card {
+  margin-top: 32px;
+  background: rgba(255,255,255,0.75);
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 8px 24px rgba(20,25,40,0.05);
+}
+
+.wallet-activity-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.wallet-activity-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid #f0f2f6;
+}
+
+.wallet-activity-item:last-child {
+  border-bottom: none;
+}
+
+.activity-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #1a1f2b;
+}
+
+.activity-ref {
+  font-size: 12px;
+  color: #8b93a7;
+  margin-top: 4px;
+}
+
+.activity-amount {
+  font-weight: 600;
+  font-size: 14px;
+  color: #111827;
+}
+
+.wallet-empty-state {
+  text-align: center;
+  padding: 30px 0;
+  color: #8b93a7;
+}
+
+.empty-icon {
+  font-size: 24px;
+  margin-bottom: 8px;
+}

@@ -1,0 +1,81 @@
+.emotional-shell {
+  padding: 12px;
+}
+
+.shell-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 16px;
+  margin-bottom: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+}
+
+.shell-header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.shell-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #eee;
+}
+
+.shell-user {
+  flex: 1;
+}
+
+.shell-line {
+  height: 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  background: #eee;
+}
+
+.shell-line.short { width: 40%; }
+.shell-line.tiny { width: 25%; }
+.shell-line.long { width: 90%; }
+.shell-line.medium { width: 70%; }
+.shell-line.small { width: 50%; }
+
+.shell-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.shell-action {
+  width: 60px;
+  height: 16px;
+  border-radius: 8px;
+  background: #eee;
+}
+
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  height: 100%;
+  width: 150%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.6),
+    transparent
+  );
+  animation: shimmer 1.4s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    left: 150%;
+  }
+}

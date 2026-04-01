@@ -1,0 +1,297 @@
+/* ================= MAIN ================= */
+.roles-container {
+  padding: 40px;
+  color: #e5e7eb;
+  font-family: "Inter", sans-serif;
+}
+
+/* ================= HEADER ================= */
+.roles-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.roles-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.roles-header p {
+  font-size: 14px;
+  opacity: 0.6;
+  margin-top: 4px;
+}
+
+/* ================= BUTTON ================= */
+.create-role-btn {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.create-role-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+}
+
+/* ================= TABLE ================= */
+.roles-table {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* HEADER */
+.roles-head {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  padding: 16px 20px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: rgba(255,255,255,0.06);
+  color: #9ca3af;
+}
+
+/* ROW */
+.roles-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  padding: 18px 20px;
+  align-items: center;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  transition: 0.25s;
+}
+
+.roles-row:hover {
+  background: rgba(99, 102, 241, 0.08);
+}
+
+/* ROLE NAME */
+.role-name {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* ================= BADGES ================= */
+.roles-row span {
+  font-size: 14px;
+}
+
+.roles-row span:nth-child(2) {
+  color: #60a5fa;
+}
+
+.roles-row span:nth-child(3) {
+  color: #34d399;
+}
+
+.roles-row span:nth-child(4) {
+  color: #fbbf24;
+}
+
+/* ================= MODAL ================= */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #0f172a;
+  padding: 28px;
+  border-radius: 16px;
+  width: 420px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* INPUTS */
+.modal input,
+.modal select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: #020617;
+  color: #fff;
+  outline: none;
+}
+
+.modal input:focus,
+.modal select:focus {
+  border-color: #6366f1;
+}
+
+/* ACTIONS */
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.modal-actions button {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-actions button:first-child {
+  background: #1f2937;
+  color: #fff;
+}
+
+.modal-actions button:last-child {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+}
+
+/* ================= LOADING ================= */
+.roles-loading {
+  padding: 60px;
+  text-align: center;
+  opacity: 0.6;
+}
+/* ================= EMPTY ================= */
+.roles-empty {
+  text-align: center;
+  padding: 60px;
+  opacity: 0.6;
+}
+
+/* ================= ROLE BADGES ================= */
+.role-level {
+  color: #60a5fa;
+  font-weight: 500;
+}
+
+.role-team {
+  color: #34d399;
+}
+
+.role-perms {
+  color: #fbbf24;
+  font-weight: 500;
+}
+
+/* ================= ACTION BUTTON ================= */
+.role-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.perm-btn {
+  background: rgba(99,102,241,0.15);
+  border: 1px solid rgba(99,102,241,0.3);
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: #a5b4fc;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.perm-btn:hover {
+  background: rgba(99,102,241,0.3);
+}
+
+/* ================= LOADING ================= */
+.roles-loading {
+  padding: 80px;
+  text-align: center;
+  font-size: 15px;
+  opacity: 0.5;
+}
+/* ================= LARGE MODAL ================= */
+.modal.large {
+  width: 700px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* ================= CATEGORY ================= */
+.perm-category {
+  margin-top: 20px;
+}
+
+.perm-category h3 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #9ca3af;
+  margin-bottom: 10px;
+}
+
+/* ================= GRID ================= */
+.permissions-wrapper {
+  margin-top: 15px;
+}
+
+.permissions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+/* ================= ITEM ================= */
+.perm-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.05);
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.perm-item:hover {
+  background: rgba(99,102,241,0.15);
+}
+/* SEARCH */
+.perm-search {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+}
+
+/* HEADER */
+.perm-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select-all {
+  background: none;
+  border: none;
+  color: #6366f1;
+  cursor: pointer;
+}
+
+/* COUNT */
+.perm-count {
+  margin-right: auto;
+  color: #9ca3af;
+}

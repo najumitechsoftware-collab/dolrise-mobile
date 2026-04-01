@@ -1,0 +1,100 @@
+/* Full page background */
+.ceo-login-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #000000, #111214);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Card */
+.ceo-login-card {
+  background: rgba(30, 30, 35, 0.9);
+  padding: 30px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  border: 1px solid #3a3a40;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Title */
+.ceo-title {
+  color: white;
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+/* Subtitle */
+.ceo-subtitle {
+  color: #c0c0c0;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+/* Error text */
+.ceo-error {
+  background: #4a0000;
+  color: #ff8080;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Form spacing */
+.ceo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Label + input */
+.ceo-input-group label {
+  color: #dcdcdc;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.ceo-input-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #444;
+  background: #222;
+  color: white;
+  outline: none;
+}
+
+.ceo-input-group input:focus {
+  border-color: #4a90e2;
+}
+
+/* Login button */
+.ceo-btn {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.ceo-btn:hover {
+  background: #1d4ed8;
+}
+
+.ceo-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

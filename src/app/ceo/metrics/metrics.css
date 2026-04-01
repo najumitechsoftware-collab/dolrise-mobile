@@ -1,0 +1,176 @@
+/* ===============================
+   GLOBAL
+=============================== */
+.metrics-container {
+  padding: 24px;
+  background: #0a0a0a;
+  min-height: 100vh;
+  color: #e5e5e5;
+  font-family: "Inter", sans-serif;
+}
+
+/* ===============================
+   HEADER
+=============================== */
+.metrics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.metrics-header h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* ===============================
+   TIME FILTERS
+=============================== */
+.time-filters {
+  display: flex;
+  gap: 10px;
+}
+
+.time-filters button {
+  padding: 6px 12px;
+  background: #111;
+  border: 1px solid #222;
+  color: #aaa;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.time-filters button:hover {
+  border-color: #555;
+  color: #fff;
+}
+
+.time-filters button.active {
+  background: linear-gradient(135deg, #0ea5e9, #22c55e);
+  color: #fff;
+  border: none;
+}
+
+/* ===============================
+   KPI
+=============================== */
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.kpi {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 10px;
+  padding: 18px;
+  transition: all 0.3s ease;
+}
+
+.kpi:hover {
+  transform: translateY(-2px);
+  border-color: #444;
+}
+
+.kpi span {
+  font-size: 13px;
+  color: #888;
+}
+
+.kpi h2 {
+  font-size: 20px;
+  margin-top: 6px;
+  color: #fff;
+}
+
+/* ===============================
+   AI BAR
+=============================== */
+.ai-bar {
+  background: rgba(255, 165, 0, 0.08);
+  border: 1px solid rgba(255, 165, 0, 0.2);
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+
+/* ===============================
+   SECTION
+=============================== */
+.section {
+  margin-bottom: 25px;
+}
+
+.section h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.section-content {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* ===============================
+   ROW
+=============================== */
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-bottom: 1px solid #1a1a1a;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row:hover {
+  background: #181818;
+}
+
+/* ===============================
+   SCROLL
+=============================== */
+.section-content {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.section-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.section-content::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+@media (max-width: 768px) {
+  .metrics-header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .time-filters {
+    flex-wrap: wrap;
+  }
+}

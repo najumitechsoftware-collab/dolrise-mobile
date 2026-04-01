@@ -1,0 +1,14 @@
+.wrapper{
+display:flex;
+justify-content:center;
+margin-top:12px;
+}
+
+.button{
+background:#111;
+color:white;
+border:none;
+padding:10px 16px;
+border-radius:8px;
+cursor:pointer;
+}

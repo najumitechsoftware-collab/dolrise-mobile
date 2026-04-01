@@ -1,0 +1,158 @@
+/* ===============================
+   DOLRISE — PRIVACY & VISIBILITY
+================================ */
+
+.privacy-root {
+  min-height: 100vh;
+  background: #fbf7ed;
+  position: relative;
+}
+
+/* ===== HEADER ===== */
+
+.privacy-header {
+  padding: 18px 16px 20px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.privacy-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 6px 0;
+}
+
+.privacy-header p {
+  font-size: 14px;
+  color: #6f6f6f;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #b89b2e;
+  cursor: pointer;
+}
+
+/* ===== MENU ===== */
+
+.privacy-menu {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.privacy-item {
+  background: #fff;
+  border-radius: 18px;
+  padding: 16px;
+  border: 1px solid rgba(0,0,0,0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.privacy-item strong {
+  font-size: 15px;
+}
+
+.privacy-item span {
+  font-size: 13px;
+  color: #6f6f6f;
+}
+
+.arrow {
+  font-size: 18px;
+  color: #aaa;
+}
+
+/* ===== FULL SCREEN SHEET ===== */
+
+.privacy-root.locked {
+  overflow: hidden;
+}
+
+.privacy-sheet {
+  position: fixed;
+  inset: 0;
+  background: #fbf7ed;
+  z-index: 200;
+  animation: slideUp 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.sheet-header {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.sheet-header h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* ===== OPTIONS ===== */
+
+.sheet-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.privacy-option {
+  background: #fff;
+  border-radius: 18px;
+  padding: 16px;
+  border: 1px solid rgba(0,0,0,0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.privacy-option strong {
+  font-size: 15px;
+}
+
+.privacy-option small {
+  font-size: 12px;
+  color: #6f6f6f;
+}
+
+.privacy-option.active {
+  border-color: #d4af37;
+  background: rgba(212,175,55,0.08);
+}
+
+.check {
+  font-size: 18px;
+  color: #d4af37;
+}
+
+.saving-indicator {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #6f6f6f;
+}
+
+.privacy-loading {
+  padding: 40px;
+  text-align: center;
+  color: #6f6f6f;
+}

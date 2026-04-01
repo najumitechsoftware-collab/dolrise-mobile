@@ -1,0 +1,46 @@
+"use client";
+
+
+import { useEffect, useState } from "react";
+import FeedItem from "./FeedItem";
+import { getAllFeed } from "@/lib/api/feed";
+
+interface FeedPost {
+  id: number;
+  content: string;
+  mood: string;
+  aura: string;
+  type: string;
+  author: {
+    id: number;
+    username: string;
+    avatar_url: string | null;
+  };
+  isFollowing?: boolean;
+}
+
+export default function FeedList() {
+  const [posts, setPosts] = useState<FeedPost[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    getAllFeed().then((data) => {
+      setPosts(Array.isArray(data) ? data : []);
+      setLoading(false);
+    });
+  }, []);
+
+  if (loading)
+    return <div className="feed-loading">🌞 Loading your RiseFeed...</div>;
+
+  if (posts.length === 0)
+    return <div className="no-posts">No posts yet 💛</div>;
+
+  return (
+    <div className="feed-content">
+      {posts.map((post) => (
+        <FeedItem key={post.id} post={post} />
+      ))}
+    </div>
+  );
+}

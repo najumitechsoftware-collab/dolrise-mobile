@@ -1,0 +1,154 @@
+/* =========================================================
+   🌿 DolRise – Reset Password (CSS Module Safe)
+   ========================================================= */
+
+.page {
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #f9f6ef 0%,
+    #fdfcf9 60%,
+    #ffffff 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 34px 28px 36px;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.04),
+    0 1px 0 rgba(0, 0, 0, 0.04);
+  text-align: center;
+}
+
+/* -------------------------
+   Title & subtitle
+   ------------------------- */
+
+.title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1f2a32;
+  margin-bottom: 10px;
+  letter-spacing: -0.3px;
+}
+
+.subtitle {
+  font-size: 14.8px;
+  line-height: 1.65;
+  color: #5f6b75;
+  margin-bottom: 26px;
+}
+
+/* -------------------------
+   Form
+   ------------------------- */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 15px;
+  border-radius: 14px;
+  border: 1.5px solid #e6e2d8;
+  outline: none;
+  background: #fff;
+  color: #1f2a32;
+  transition: border 0.25s ease, box-shadow 0.25s ease;
+}
+
+.input::placeholder {
+  color: #9aa3aa;
+}
+
+.input:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.18);
+}
+
+/* -------------------------
+   Button
+   ------------------------- */
+
+.submitBtn {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 999px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #ffffff;
+  background: linear-gradient(
+    135deg,
+    #d4af37 0%,
+    #c9a227 100%
+  );
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    opacity 0.15s ease;
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.28);
+}
+
+.submitBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(212, 175, 55, 0.35);
+}
+
+.submitBtn:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 14px rgba(212, 175, 55, 0.25);
+}
+
+.submitBtn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* -------------------------
+   Messages
+   ------------------------- */
+
+.error {
+  margin-top: 8px;
+  font-size: 13.5px;
+  color: #c0392b;
+  line-height: 1.5;
+}
+
+.success {
+  margin-top: 8px;
+  font-size: 13.5px;
+  color: #2e7d32;
+  line-height: 1.5;
+}
+
+/* -------------------------
+   Mobile polish
+   ------------------------- */
+
+@media (max-width: 360px) {
+  .card {
+    padding: 30px 22px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,27 @@
+.dashboard h1 {
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.card span {
+  opacity: 0.6;
+}
+
+.card h2 {
+  margin-top: 10px;
+}
+
+.card.alert {
+  border: 1px solid #ef4444;
+}

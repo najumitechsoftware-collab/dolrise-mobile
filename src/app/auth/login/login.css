@@ -1,0 +1,178 @@
+/* ===========================================================
+   DolRise Login — Professional SaaS UI
+   Colors: Milk White + Gold + Soft Shades
+   Responsive & Clean Layout
+=========================================================== */
+
+/* Full page background */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #faf8f3;
+  color: #1a1a1a;
+}
+
+/* Center card */
+.login-card {
+  background: #ffffff;
+  border: 1px solid #e5d6b8;
+  border-radius: 18px;
+  padding: 32px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(6px);
+}
+
+/* Logo */
+.login-logo {
+  width: 82px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Welcome title */
+.login-title {
+  color: #d4af37;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+}
+
+/* Subtitle */
+.login-subtitle {
+  font-size: 14px;
+  text-align: center;
+  color: #6b6b6b;
+  margin-top: 4px;
+}
+
+/* Input wrapper */
+.input-group {
+  margin-top: 20px;
+}
+
+/* Input label */
+.input-label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Input container */
+.input-box {
+  position: relative;
+}
+
+/* Input fields */
+.input-box input {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #ffffff;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.input-box input:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.25);
+}
+
+/* Icons inside inputs */
+.input-icon {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  color: #d4af37;
+}
+
+/* Password toggle */
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 11px;
+  color: #555;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.toggle-password:hover {
+  color: #d4af37;
+}
+
+/* Forgot password */
+.forgot-link {
+  font-size: 12px;
+  color: #d4af37;
+  text-decoration: none;
+  margin-left: auto;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* Error message */
+.error-box {
+  color: #e03131;
+  font-size: 14px;
+  margin-top: 6px;
+  text-align: center;
+}
+
+/* Login button */
+.login-btn {
+  width: 100%;
+  margin-top: 18px;
+  padding: 14px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(90deg, #d4af37, #e6c65c, #b48e28);
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.login-btn:hover {
+  filter: brightness(1.1);
+}
+
+.login-btn:disabled {
+  background: #d4af3766;
+  cursor: not-allowed;
+}
+
+/* Register link */
+.register-text {
+  margin-top: 22px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.register-text a {
+  color: #d4af37;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.login-footer {
+  font-size: 11px;
+  text-align: center;
+  color: #777;
+  padding: 18px 0;
+}

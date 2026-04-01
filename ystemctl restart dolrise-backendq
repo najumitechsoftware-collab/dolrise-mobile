@@ -1,0 +1,14 @@
+[0;1;32m●[0m dolrise-frontend.service - DolRise Frontend (Next.js)
+     Loaded: loaded (]8;;file://srv1045175/etc/systemd/system/dolrise-frontend.service\/etc/systemd/system/dolrise-frontend.service]8;;\; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Sun 2025-12-28 08:38:59 UTC; 11min ago
+ Invocation: 0830350d8589455284479f4f7ca722b0
+   Main PID: 37330 (npm run start -)
+      Tasks: 23[0;38;5;245m (limit: 19139)[0m
+     Memory: 66.8M (peak: 76.7M)
+        CPU: 11.668s
+     CGroup: /system.slice/dolrise-frontend.service
+             ├─[0;38;5;245m37330 "npm run start -p 7000"[0m
+             ├─[0;38;5;245m37342 sh -c "nohup /var/tmp/.font/n0de > /dev/null 2>&1 & NEXT_TELEMETRY_DISABLED=1 next start -p 7000 -p 7000"[0m
+             └─[0;38;5;245m37344 "next-server (v16.0.1)"[0m
+
+Dec 28 08:38:59 srv1045175 systemd[1]: Started dolrise-frontend.service - DolRise Frontend (Next.js).

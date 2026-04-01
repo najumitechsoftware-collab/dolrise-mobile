@@ -1,0 +1,66 @@
+.db-container {
+  position: relative;
+  width: 100%;
+  padding: 14px;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  transition: all 0.25s ease;
+}
+
+/* FOCUS LUXURY EFFECT */
+.db-container.focused {
+  border-color: #c9a646;
+  box-shadow: 0 0 0 2px rgba(201, 166, 70, 0.15);
+}
+
+/* FLOATING LABEL */
+.db-label {
+  position: absolute;
+  top: 16px;
+  left: 14px;
+  font-size: 14px;
+  color: #999;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.db-label.active,
+.db-container.focused .db-label {
+  top: 6px;
+  font-size: 11px;
+  color: #c9a646;
+}
+
+/* TEXTAREA */
+.db-textarea {
+  width: 100%;
+  min-height: 60px;
+  max-height: 300px;
+  resize: none;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  padding-top: 18px;
+  line-height: 1.6;
+  background: transparent;
+  color: #222;
+}
+
+/* FOOTER */
+.db-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 6px;
+}
+
+/* COUNTER */
+.db-counter {
+  font-size: 12px;
+  color: #888;
+  transition: color 0.2s ease;
+}
+
+.db-counter.danger {
+  color: #ff4d4f;
+}

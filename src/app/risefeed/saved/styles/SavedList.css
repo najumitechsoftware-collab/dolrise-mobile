@@ -1,0 +1,37 @@
+.saved-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.saved-card {
+  display: flex;
+  gap: 10px;
+  background: #f7f7f7;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.saved-card img {
+  width: 64px;
+  height: 64px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.saved-card p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.saved-card span {
+  font-size: 12px;
+  color: #888;
+}
+
+.saved-empty {
+  text-align: center;
+  color: #777;
+  padding: 24px;
+}

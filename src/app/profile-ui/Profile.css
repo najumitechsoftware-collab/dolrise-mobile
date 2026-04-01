@@ -1,0 +1,235 @@
+/* ============================================================
+   🌿 CORE PROFILE THEME (PREMIUM / EMOTIONAL)
+   ============================================================ */
+
+:root {
+  --milk-bg: #fbf6ee;
+  --card-bg: #ffffff;
+  --gold: #d4af37;
+  --gold-soft: rgba(212, 175, 55, 0.18);
+  --ink: #2b2b2b;
+  --ink-soft: #6f6f6f;
+  --border-soft: rgba(0, 0, 0, 0.06);
+}
+
+.profile-page {
+  background: var(--milk-bg);
+  min-height: 100vh;
+  padding-bottom: 3rem;
+  color: var(--ink);
+}
+
+/* ============================================================
+   🧱 HEADER
+   ============================================================ */
+
+.profile-cover {
+  height: 180px;
+  background: linear-gradient(
+    135deg,
+    #eaeaea,
+    #dcdcdc
+  );
+  position: relative;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+}
+
+.profile-avatar-float {
+  position: absolute;
+  bottom: -56px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.profile-avatar {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+  border: 6px solid var(--milk-bg);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* ============================================================
+   👤 IDENTITY
+   ============================================================ */
+
+.profile-identity {
+  margin-top: 72px;
+  text-align: center;
+}
+
+.profile-name {
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.profile-username {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+}
+
+.profile-badge {
+  margin-top: 0.6rem;
+  display: inline-block;
+  padding: 0.35rem 0.8rem;
+  font-size: 0.75rem;
+  background: var(--gold-soft);
+  color: #7a6112;
+  border-radius: 999px;
+}
+
+/* ============================================================
+   📊 STATS
+   ============================================================ */
+
+.profile-stats {
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.profile-stats .stat {
+  text-align: center;
+}
+
+.profile-stats strong {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.profile-stats span {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  margin-top: 0.15rem;
+}
+
+/* ============================================================
+   🧭 TABS
+   ============================================================ */
+
+.profile-tabs {
+  margin: 2rem auto 1.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.profile-tab {
+  padding: 0.45rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-soft);
+  background: transparent;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.profile-tab:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.profile-tab.active {
+  background: var(--gold);
+  color: #fff;
+  border-color: var(--gold);
+  box-shadow: 0 6px 16px rgba(212, 175, 55, 0.35);
+}
+
+/* ============================================================
+   📝 POSTS AREA
+   ============================================================ */
+
+.profile-posts {
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+.profile-loading,
+.profile-empty {
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  padding: 2.5rem 0;
+}
+
+/* ============================================================
+   ✨ BUTTONS (SOFT PREMIUM)
+   ============================================================ */
+
+.btn {
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn.primary {
+  background: var(--gold);
+  color: #fff;
+  border: none;
+  box-shadow: 0 6px 18px rgba(212, 175, 55, 0.35);
+}
+
+.btn.primary:hover {
+  transform: translateY(-1px);
+}
+
+.btn.ghost {
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+}
+/* ============================================================
+   🔥 REQUIRED FOR AVATAR OVER COVER (CRITICAL FIX)
+   ============================================================ */
+
+.profile-header {
+  position: relative;   /* ⬅️ WANNAN NE MAKEY */
+}
+
+/* Ensure avatar is bound to cover, not page */
+.profile-avatar-float {
+  position: absolute;
+  bottom: -64px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+/* ================================
+   Calm / Emotional Loading State
+================================ */
+
+.profile-loading.calm {
+  padding: 60px 24px;
+  text-align: center;
+  color: #2f2f2f;
+}
+
+.profile-loading.calm h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.profile-loading.calm p {
+  font-size: 15px;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+.profile-loading.calm .soft-note {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+  opacity: 0.6;
+}

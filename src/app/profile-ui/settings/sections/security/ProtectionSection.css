@@ -1,0 +1,147 @@
+/* =========================================
+   DOLRISE ACCOUNT PROTECTION HUB
+   Luxury • Calm • Premium
+========================================= */
+
+/* ================= OVERLAY ================= */
+
+.protection-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* ================= SHEET ================= */
+
+.protection-sheet {
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  border-radius: 28px 28px 0 0;
+  padding: 28px 22px 40px 22px;
+  box-shadow: 0 -20px 60px rgba(0, 0, 0, 0.25);
+  animation: slideUp 0.4s ease;
+}
+
+/* ================= HEADER ================= */
+
+.sheet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.sheet-header button {
+  background: #f3f4f6;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.sheet-header button:hover {
+  background: #e5e7eb;
+}
+
+.sheet-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* ================= ACTION CARDS ================= */
+
+.protection-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Base card */
+.protection-card {
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #f9fafb, #ffffff);
+  border: 1px solid #e5e7eb;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.protection-card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.protection-card p {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+/* Hover */
+.protection-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ================= REACTIVATE STYLE ================= */
+
+.protection-card:not(.danger) {
+  border-left: 4px solid #0f172a;
+}
+
+/* ================= DANGER CARD ================= */
+
+.protection-card.danger {
+  border-left: 4px solid #b91c1c;
+  background: linear-gradient(145deg, #fef2f2, #ffffff);
+}
+
+.protection-card.danger h4 {
+  color: #7f1d1d;
+}
+
+.protection-card.danger p {
+  color: #7c2d12;
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes slideUp {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ================= MOBILE OPTIMIZATION ================= */
+
+@media (max-width: 480px) {
+  .protection-sheet {
+    padding: 24px 18px 36px 18px;
+  }
+
+  .protection-card {
+    padding: 18px;
+  }
+
+  .sheet-header h3 {
+    font-size: 16px;
+  }
+}

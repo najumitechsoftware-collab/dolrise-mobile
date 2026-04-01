@@ -1,0 +1,129 @@
+/* =====================================================
+   DOLRISE — PREMIUM FLOATING NAV (GLOBAL SaaS STYLE)
+===================================================== */
+
+.dolbar {
+  position: fixed;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 94%;
+  max-width: 520px;
+
+  padding: 14px 22px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border-radius: 32px;
+
+  border: 1px solid rgba(0, 0, 0, 0.05);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08),
+    0 4px 12px rgba(212, 175, 55, 0.18);
+
+  z-index: 999;
+  transition: all 0.35s ease;
+}
+
+/* Hide animation */
+.dolbar.hide {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 30px);
+}
+
+/* =====================================
+   NAV BUTTON
+===================================== */
+
+.dolbar button {
+  background: transparent;
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 4px;
+
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+
+  color: #6f6f6f;
+
+  padding: 6px 8px;
+  border-radius: 14px;
+
+  transition: all 0.25s ease;
+}
+
+/* ICON */
+.dolbar button .icon {
+  font-size: 22px;
+  transition: all 0.25s ease;
+}
+
+/* LABEL */
+.dolbar button .label {
+  font-size: 11.5px;
+  font-weight: 500;
+}
+
+/* =====================================
+   ACTIVE STATE (Premium Gold Accent)
+===================================== */
+
+.dolbar button.active {
+  color: #b58a2c;
+}
+
+.dolbar button.active .icon {
+  transform: scale(1.15);
+}
+
+/* Elegant underline indicator */
+.dolbar button.active::after {
+  content: "";
+  width: 18px;
+  height: 3px;
+  margin-top: 4px;
+
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    #d4af37,
+    #b58a2c
+  );
+}
+
+/* =====================================
+   HOVER / TOUCH FEEDBACK
+===================================== */
+
+.dolbar button:active {
+  transform: scale(0.92);
+}
+
+.dolbar button:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+/* =====================================
+   MOBILE SAFE AREA
+===================================== */
+
+@supports(padding: max(0px)) {
+  .dolbar {
+    padding-bottom: max(14px, env(safe-area-inset-bottom));
+  }
+}

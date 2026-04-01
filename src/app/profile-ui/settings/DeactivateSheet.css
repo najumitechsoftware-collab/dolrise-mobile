@@ -1,0 +1,129 @@
+/* ================================
+   OVERLAY
+================================ */
+.deactivate-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: flex-end;
+  z-index: 1000;
+}
+
+/* ================================
+   SHEET
+================================ */
+.deactivate-sheet {
+  width: 100%;
+  height: 100vh;
+  background: #fffdf9;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 0.35s ease;
+}
+
+/* ================================
+   ANIMATION
+================================ */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* ================================
+   HEADER
+================================ */
+.deactivate-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.deactivate-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* ================================
+   BODY
+================================ */
+.deactivate-body {
+  flex: 1;
+  margin-top: 30px;
+}
+
+.warning-box {
+  background: #fff4f4;
+  border: 1px solid #f3c5c5;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.warning-box ul {
+  padding-left: 20px;
+}
+
+.warning-box li {
+  margin-bottom: 8px;
+  color: #7a2e2e;
+  font-size: 14px;
+}
+
+/* ================================
+   PASSWORD FIELD
+================================ */
+.password-field label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.password-field input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  outline: none;
+  font-size: 14px;
+}
+
+/* ================================
+   FOOTER
+================================ */
+.deactivate-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.cancel-btn {
+  flex: 1;
+  background: #f3f3f3;
+  border: none;
+  border-radius: 14px;
+  padding: 12px;
+  font-weight: 500;
+}
+
+.confirm-btn {
+  flex: 1;
+  background: #b63a3a;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  padding: 12px;
+  font-weight: 600;
+}
+
+.confirm-btn:disabled {
+  opacity: 0.5;
+}

@@ -1,0 +1,149 @@
+.preview-sheet {
+  position: fixed;
+  inset: 0;
+  background: #fffdf4;
+  z-index: 50;
+  overflow-y: auto;
+}
+
+/* HEADER */
+.preview-header {
+  padding: 20px;
+}
+.preview-back {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: #7a5f22;
+}
+.preview-header h2 {
+  font-size: 22px;
+  margin-top: 8px;
+}
+.preview-sub {
+  font-size: 14px;
+  color: #777;
+  margin-top: 4px;
+}
+
+/* COVER */
+.preview-cover {
+  height: 140px;
+  background: linear-gradient(135deg, #d4af37, #9b7a2f);
+  background-size: cover;
+  background-position: center;
+}
+
+/* AVATAR */
+.preview-avatar {
+  margin-top: -48px;
+  display: flex;
+  justify-content: center;
+}
+.preview-avatar img,
+.avatar-fallback {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: #fff;
+  border: 4px solid #fff;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* IDENTITY */
+.preview-identity {
+  text-align: center;
+  margin-top: 8px;
+}
+.preview-identity h3 {
+  font-size: 20px;
+  margin: 0;
+}
+.preview-identity span {
+  font-size: 14px;
+  color: #777;
+}
+
+/* STATS */
+.preview-stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 18px 0;
+  padding: 14px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.preview-stats .stat {
+  text-align: center;
+}
+.preview-stats strong {
+  font-size: 18px;
+}
+.preview-stats span {
+  font-size: 12px;
+  color: #777;
+}
+
+/* TABS */
+.preview-tabs {
+  display: flex;
+  gap: 8px;
+  padding: 0 20px;
+}
+.preview-tabs button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 999px;
+  border: 1px solid #eadfae;
+  background: #fff;
+  cursor: pointer;
+}
+.preview-tabs button.active {
+  background: linear-gradient(135deg, #c9a64d, #9b7a2f);
+  color: #fff;
+}
+
+/* POSTS */
+.preview-posts {
+  padding: 20px;
+}
+.preview-post {
+  background: #fff;
+  border: 1px solid #eadfae;
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+.empty {
+  text-align: center;
+  color: #888;
+}
+
+/* ABOUT */
+.preview-about {
+  padding: 20px;
+}
+.preview-bio {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+.preview-row {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.preview-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.preview-links a,
+.preview-links span {
+  font-size: 14px;
+  color: #7a5f22;
+}

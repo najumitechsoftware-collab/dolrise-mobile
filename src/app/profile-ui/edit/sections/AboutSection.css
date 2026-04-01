@@ -1,0 +1,146 @@
+/* OVERLAY */
+.about-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 17, 17, 0.45);
+  z-index: 50;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* SHEET */
+.about-sheet {
+  width: 100%;
+  max-height: 92vh;
+  background: #f9fafb;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  box-shadow: 0 -20px 40px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+
+/* SLIDE UP ANIMATION */
+.slide-up {
+  animation: slideUp 0.35s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* HEADER */
+.about-header {
+  padding: 20px 20px 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.about-back {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #7a5f22;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.about-header h2 {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.about-emotion {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* BODY */
+.about-body {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-body label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.about-body textarea {
+  flex: 1;
+  resize: none;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  padding: 16px;
+  font-size: 15px;
+  line-height: 1.6;
+  background: #ffffff;
+  outline: none;
+}
+
+.about-body textarea:focus {
+  border-color: #b8923d;
+  box-shadow: 0 0 0 2px rgba(184, 146, 61, 0.2);
+}
+
+/* COUNTER */
+.about-counter {
+  margin-top: 10px;
+  font-size: 13px;
+  text-align: right;
+}
+
+.about-counter.safe {
+  color: #6b7280;
+}
+
+.about-counter.warn {
+  color: #b45309;
+}
+
+.about-counter.danger {
+  color: #b91c1c;
+}
+
+/* FOOTER */
+.about-footer {
+  padding: 16px 20px;
+  border-top: 1px solid #e5e7eb;
+  background: linear-gradient(
+    135deg,
+    #f3f4f6,
+    #efe2b3
+  );
+}
+
+.save-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(
+    135deg,
+    #9b7a2f,
+    #c9a64d
+  );
+  cursor: pointer;
+}
+
+.save-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

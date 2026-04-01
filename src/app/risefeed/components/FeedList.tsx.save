@@ -1,0 +1,303 @@
+     HYDRATION
+  =========================== */
+
+  useEffect(() => {
+    setHasHydrated(true);
+  }, []);
+
+  /* ===========================
+     INSERT WITHOUT SHIFT
+  =========================== */
+
+  const insertWithoutShift = (
+    updater: (prev: any[]) => any[]
+  ) => {
+    startTransition(() => {
+      setPosts((prev) => {
+        let next = updater(prev);
+
+        if (next.length > MAX_DOM_POSTS) {
+          next = next.slice(
+            next.length - MAX_DOM_POSTS
+          );
+        }
+
+        saveFeedCache(mode, next);
+        return next;
+      });
+    });
+  };
+
+  /* ===========================
+     LOAD FEED
+  =========================== */
+const loadFeed = useCallback(
+  async (forceFresh = false) => {
+
+    // 🔥 If forceFresh, reset pagination state
+    if (forceFresh) {
+      setCursor(null);
+      setHasMore(true);
+      seenPostIdsRef.current.clear();
+    }
+
+    if (fetching) return;
+
+    // Only block by hasMore if not forceFresh
+    if (!forceFresh && !hasMore) return;
+
+    const requestId = ++requestIdRef.current;
+    setFetching(true);
+
+    try {
+      const query = new URLSearchParams();
+
+      query.set("mode", mode);
+      query.set("limit", BATCH_SIZE.toString());
+
+      // Only send cursor if not forceFresh
+      if (!forceFresh && cursor) {
+        query.set("cursor", cursor);
+      }
+
+      const res = await fetch(
+        `/api/feed/lumi?${query.toString()}`,
+        {
+          credentials: "include",
+          cache: "no-store",
+        }
+      );
+
+      if (!res.ok) throw new Error();
+
+      const data = await res.json();
+
+      const incomingRaw =
+        Array.isArray(data?.feed)
+          ? data.feed
+          : [];
+
+      const apiNextCursor =
+        typeof data?.nextCursor === "string"
+          ? data.nextCursor
+          : null;
+
+      const incoming =
+        incomingRaw.filter(
+          (p: any) =>
+            !seenPostIdsRef.current.has(p.id)
+        );
+
+      if (requestId === requestIdRef.current) {
+
+        incoming.forEach((p: any) =>
+          seenPostIdsRef.current.add(p.id)
+        );
+
+        insertWithoutShift((prev) =>
+          forceFresh
+            ? incoming.length > 0
+              ? incoming
+              : prev
+            : [...prev, ...incoming]
+        );
+
+        if (apiNextCursor) {
+          setCursor(apiNextCursor);
+        } else {
+          setHasMore(false);
+        }
+      }
+
+    } catch {
+      const cached = loadFeedCache(mode);
+      if (cached.length > 0) {
+        setPosts(cached);
+      }
+    } finally {
+      if (requestId === requestIdRef.current) {
+        setFetching(false);
+      }
+    }
+  },
+  [mode, cursor, fetching, hasMore]
+);
+
+  /* ===========================
+     MOMENTUM + SMART SCROLL
+  =========================== */
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const container =
+        scrollContainerRef.current;
+      if (!container) return;
+
+      const now = Date.now();
+      const currentTop =
+        container.scrollTop;
+
+      const deltaY =
+        Math.abs(
+          currentTop -
+            lastScrollTopRef.current
+        );
+
+      const deltaTime =
+        now - lastScrollTimeRef.current;
+
+      const velocity =
+        deltaY / (deltaTime || 1);
+
+      lastScrollTopRef.current =
+        currentTop;
+      lastScrollTimeRef.current =
+        now;
+
+      const scrollPosition =
+        currentTop +
+        container.clientHeight;
+
+      const height =
+        container.scrollHeight;
+
+      const sixtyPercent =
+        height * 0.6;
+      const eightyFivePercent =
+        height * 0.85;
+
+      /* ---------
+         PRELOAD EARLY
+      --------- */
+      if (
+        scrollPosition >
+          sixtyPercent &&
+        hasMore &&
+        !fetching
+      ) {
+        loadFeed(false);
+      }
+
+      /* ---------
+         FORCE LOAD
+      --------- */
+      if (
+        scrollPosition >
+          eightyFivePercent &&
+        hasMore &&
+        !fetching
+      ) {
+        loadFeed(false);
+      }
+
+      /* ---------
+         MOMENTUM AWARE DEPTH
+      --------- */
+      if (cursor && hasMore) {
+        if (velocity > 1.5) {
+          predictivePreloadCursor(
+            mode,
+            cursor,
+            3
+          );
+        } else if (velocity > 0.8) {
+          predictivePreloadCursor(
+            mode,
+            cursor,
+            2
+          );
+        } else {
+          predictivePreloadCursor(
+            mode,
+            cursor,
+            1
+          );
+        }
+      }
+    };
+
+    const container =
+      scrollContainerRef.current;
+
+    container?.addEventListener(
+      "scroll",
+      handleScroll
+    );
+
+    return () =>
+      container?.removeEventListener(
+        "scroll",
+        handleScroll
+      );
+  }, [cursor, hasMore, fetching, mode]);
+
+  /* ===========================
+     SESSION RESTORE
+  =========================== */
+
+  useEffect(() => {
+    seenPostIdsRef.current.clear();
+    setCursor(null);
+    setHasMore(true);
+
+    const cached =
+      loadFeedCache(mode);
+
+    if (cached.length > 0) {
+      setPosts(cached);
+
+      cached.forEach((p: any) =>
+        seenPostIdsRef.current.add(
+          p.id
+        )
+      );
+    } else {
+      setPosts([]);
+    }
+
+    loadFeed(true);
+
+    predictivePreloadTab("flow");
+    predictivePreloadTab("moments");
+    predictivePreloadTab("space");
+  }, [mode, targetPostId]);
+
+  /* ===========================
+     RENDER
+  =========================== */
+
+  return (
+    <div
+      ref={scrollContainerRef}
+      className="feed-list-wrapper"
+    >
+      {shouldShow && (
+        <FeedMoodPrompt
+          onSelectMood={onSelectMood}
+          onSkip={onSkip}
+        />
+      )}
+
+      {(!hasHydrated ||
+        (posts.length === 0 &&
+          fetching)) && <EmotionalShell />}
+
+      {posts.map(
+        (post, index) => (
+          <div
+            key={post.id}
+            data-id={post.id}
+            className="feed-item-wrap"
+          >
+            <FeedItem
+              post={post}
+              index={index}
+              allPosts={posts}
+              onFlowGlobal={() => {}}
+            />
+          </div>
+        )
+      )}
+    </div>
+  );
+}

@@ -1,0 +1,301 @@
+/* =========================================================
+   🌱 DOLRISE — POST CAPTION (PREMIUM SaaS)
+   Emotional • Clean • Medium-inspired
+========================================================= */
+
+
+/* =====================================
+   📝 DEFAULT CAPTION (NORMAL POSTS)
+===================================== */
+
+.feed-caption-wrapper {
+  margin: 14px 16px 0;
+}
+
+.feed-caption {
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: #2f2f2f;
+  white-space: pre-wrap;
+  word-break: break-word;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+/* 🔥 2-LINE CLAMP SYSTEM */
+.feed-caption-clamped {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Read more button */
+.feed-read-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #b38b2e;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.feed-read-toggle:hover {
+  opacity: 0.75;
+}
+
+
+/* =====================================
+   💎 SHORT TEXT CARD (EMOTIONAL HIGHLIGHT)
+===================================== */
+
+.short-text-card {
+  margin: 16px;
+  padding: 22px;
+  border-radius: 18px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+  animation: liftIn 0.28s ease;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.5),
+    0 10px 30px rgba(0,0,0,0.08);
+}
+
+.short-text-content {
+  margin: 0;
+}
+
+
+/* =====================================
+   🎨 MOOD THEMES
+===================================== */
+
+.mood-default {
+  background: linear-gradient(180deg,#fbfaf7,#f2efe6);
+  color: #3f3526;
+  border: 1px solid rgba(214,197,161,0.4);
+}
+
+.mood-calm {
+  background: linear-gradient(180deg,#f1f8fb,#e7f1f6);
+  color: #2e4b5c;
+  border: 1px solid rgba(160,190,210,0.4);
+}
+
+.mood-happy {
+  background: linear-gradient(180deg,#fff8e6,#f5ecd1);
+  color: #5c4514;
+  border: 1px solid rgba(212,175,55,0.35);
+}
+
+.mood-lonely {
+  background: linear-gradient(180deg,#f2f3ff,#e7e5f5);
+  color: #3f3b66;
+  border: 1px solid rgba(150,145,200,0.35);
+}
+
+.mood-reflective {
+  background: linear-gradient(180deg,#f4f4f4,#ededed);
+  color: #444;
+  border: 1px solid rgba(180,180,180,0.35);
+}
+
+.mood-sad {
+  background: linear-gradient(180deg,#f7f7f7,#eeeeee);
+  color: #4a4a4a;
+  border: 1px solid rgba(180,180,180,0.35);
+}
+
+.mood-love {
+  background: linear-gradient(180deg,#fff0f6,#f8dce8);
+  color: #7a2f52;
+  border: 1px solid rgba(220,120,160,0.35);
+}
+
+.mood-angry {
+  background: linear-gradient(180deg,#fff1f1,#f7dddd);
+  color: #6a2c2c;
+  border: 1px solid rgba(200,80,80,0.35);
+}
+
+
+/* =====================================
+   📰 LONG TEXT (OLD STORY PREVIEW)
+===================================== */
+
+.story-feed-card {
+  margin: 14px 16px;
+}
+
+.story-feed-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 6px;
+  color: #2b2418;
+}
+
+.story-feed-preview {
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: #4a3e32;
+  margin-bottom: 6px;
+}
+
+.story-read-more {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b38b2e;
+  cursor: pointer;
+}
+
+
+/* =====================================
+   🎧 VOICE CAPTION
+===================================== */
+
+.voice-caption {
+  margin: 14px 16px 0;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #444;
+}
+
+
+/* =====================================
+   ✨ ANIMATION
+===================================== */
+
+@keyframes liftIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =====================================
+   📱 MOBILE POLISH
+===================================== */
+
+@media (max-width:480px) {
+  .short-text-card {
+    font-size: 16.5px;
+    padding: 18px;
+  }
+
+  .story-feed-title {
+    font-size: 18.5px;
+  }
+}
+
+
+/* =====================================
+   📰 STORY — PREMIUM EDITORIAL CARD
+===================================== */
+
+.story-editorial-card {
+  margin: 16px;
+  padding: 18px;
+  border-radius: 18px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: #fbfaf7;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.story-editorial-card:hover {
+  transform: translateY(-2px);
+}
+
+.story-editorial-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.story-editorial-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.story-editorial-preview {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #5a5247;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.story-editorial-read {
+  font-size: 14px;
+  font-weight: 600;
+  color: #b38b2e;
+}
+
+.story-editorial-accent {
+  width: 72px;
+  height: 72px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #efe7d6, #f7f2e8);
+}
+
+.story-editorial-letter {
+  font-size: 28px;
+  font-weight: 700;
+  color: #b38b2e;
+  font-family: serif;
+}
+
+.mood-calm .story-editorial-accent {
+  background: linear-gradient(135deg,#e6f2f7,#dbeaf2);
+}
+
+.mood-love .story-editorial-accent {
+  background: linear-gradient(135deg,#f8e4ec,#f3d6e2);
+}
+
+.mood-reflective .story-editorial-accent {
+  background: linear-gradient(135deg,#f2f2f2,#e8e8e8);
+}
+
+.mood-happy .story-editorial-accent {
+  background: linear-gradient(135deg,#fff3d9,#f9e6b8);
+}
+.hashtag {
+  color: #facc15;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mention {
+  color: #60a5fa;
+  font-weight: 600;
+  cursor: pointer;
+}

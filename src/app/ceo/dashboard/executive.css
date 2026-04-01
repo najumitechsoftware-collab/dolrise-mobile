@@ -1,0 +1,236 @@
+/* ===============================
+   GLOBAL CONTAINER
+=============================== */
+.exec-container {
+  padding: 20px;
+  color: #e5e7eb;
+  background: radial-gradient(circle at top, #020617, #020617 60%);
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* ===============================
+   HEADER
+=============================== */
+.exec-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.exec-header h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* ===============================
+   THREAT BADGE
+=============================== */
+.threat {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.threat.low {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+}
+
+.threat.medium {
+  background: rgba(251, 191, 36, 0.15);
+  color: #fbbf24;
+}
+
+.threat.high {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
+
+/* ===============================
+   KPI ROW
+=============================== */
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.kpi-card {
+  background: linear-gradient(145deg, #020617, #0f172a);
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+  transition: all 0.25s ease;
+}
+
+.kpi-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+.kpi-card span {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.kpi-card h2 {
+  margin-top: 6px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.kpi-card.alert {
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+/* ===============================
+   CHART GRID
+=============================== */
+.chart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* ===============================
+   CHART CARD
+=============================== */
+.chart-card {
+  background: linear-gradient(145deg, #020617, #0f172a);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+}
+
+.chart-card h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #cbd5f5;
+}
+
+/* ===============================
+   SECTION (OLD GRID SUPPORT)
+=============================== */
+.exec-section {
+  margin-top: 20px;
+}
+
+.exec-section h2 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #9ca3af;
+}
+
+/* ===============================
+   GRID
+=============================== */
+.exec-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+/* ===============================
+   CARD
+=============================== */
+.exec-card {
+  background: linear-gradient(145deg, #020617, #0f172a);
+  padding: 18px;
+  border-radius: 14px;
+  transition: all 0.2s ease;
+}
+
+.exec-card:hover {
+  transform: scale(1.03);
+}
+
+.exec-card span {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.exec-card h2 {
+  margin-top: 6px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.alert-card {
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+/* ===============================
+   AI INSIGHTS
+=============================== */
+.insight-box {
+  margin-top: 20px;
+  background: linear-gradient(145deg, #020617, #111827);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+}
+
+.insight-box h3 {
+  margin-bottom: 10px;
+}
+
+.exec-insight {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #e5e7eb;
+}
+
+/* ===============================
+   STATES
+=============================== */
+.exec-loading,
+.exec-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  font-size: 16px;
+  color: #9ca3af;
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+@media (max-width: 900px) {
+  .kpi-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .chart-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exec-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .kpi-row,
+  .exec-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.forecast-box,
+.leaderboard,
+.funnel {
+  margin-top: 20px;
+  background: #0f172a;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.leader-item {
+  padding: 6px 0;
+  border-bottom: 1px solid #1f2937;
+}

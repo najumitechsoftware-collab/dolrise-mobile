@@ -1,0 +1,117 @@
+.security-wrapper {
+  position: relative;
+}
+
+/* ================= MAIN PAGE ================= */
+
+.security-page {
+  padding: 20px;
+}
+
+.security-header h2 {
+  margin: 6px 0;
+}
+
+.security-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.security-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  border: 2px solid #222;
+}
+
+/* ================= FULL SCREEN ================= */
+
+.security-fullscreen {
+  position: fixed;
+  inset: 0;
+  background: #fffaf0;
+  z-index: 9999;
+  animation: slideUp 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.sheet-header {
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sheet-content {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* ================= PASSWORD ================= */
+
+.password-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.field {
+  position: relative;
+}
+
+.field input {
+  width: 100%;
+  padding: 14px 44px 14px 14px;
+  border-radius: 14px;
+  border: 1px solid #ccc;
+}
+
+.eye {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+}
+
+.strength.weak { color: #d97706; }
+.strength.medium { color: #ca8a04; }
+.strength.strong { color: #16a34a; }
+
+.rules {
+  font-size: 14px;
+  padding-left: 18px;
+}
+
+.error {
+  color: #dc2626;
+  font-size: 14px;
+}
+
+.primary-btn {
+  background: #d4af37;
+  color: #000;
+  border-radius: 999px;
+  padding: 14px;
+  font-weight: bold;
+  border: none;
+}
+
+.primary-btn:disabled {
+  opacity: 0.4;
+}

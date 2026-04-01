@@ -1,0 +1,35 @@
+.security-sheet {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: #ffffff;
+  border-radius: 20px 20px 0 0;
+  padding: 24px;
+  overflow-y: auto;
+  z-index: 999;
+}
+
+.slide-up {
+  animation: slideUp 0.35s ease forwards;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+.sheet-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.placeholder-box {
+  padding: 24px;
+  border-radius: 14px;
+  background: #f9f9f9;
+  text-align: center;
+  color: #666;
+}

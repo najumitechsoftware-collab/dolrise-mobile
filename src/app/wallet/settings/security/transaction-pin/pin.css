@@ -1,0 +1,37 @@
+.pin-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8fafc;
+}
+
+.pin-card {
+  background: white;
+  padding: 40px;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.pin-card h1 {
+  margin-bottom: 20px;
+}
+
+.pin-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.pin-card button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  background: #16a34a;
+  color: white;
+  border: none;
+}

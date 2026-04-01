@@ -1,0 +1,81 @@
+/* ===============================
+   LEGAL DOCUMENT – PREMIUM STYLE
+   =============================== */
+
+.legal-page {
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+.legal-container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 48px 20px;
+}
+
+/* Header */
+.legal-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  margin-bottom: 8px;
+}
+
+.legal-meta {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* Sections */
+.legal-section {
+  margin-top: 56px;
+}
+
+.legal-section h2 {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  margin-bottom: 18px;
+  color: #111827;
+}
+
+/* Paragraphs */
+.legal-section p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #2e2e2e;
+  margin-bottom: 18px;
+}
+
+/* Links */
+.legal-link {
+  color: #2563eb;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal-link:hover {
+  opacity: 0.85;
+}
+
+/* Subtle divider for clarity */
+.legal-section:not(:first-of-type) {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 40px;
+}
+
+/* Mobile polish */
+@media (max-width: 640px) {
+  .legal-header h1 {
+    font-size: 30px;
+  }
+
+  .legal-section h2 {
+    font-size: 22px;
+  }
+
+  .legal-container {
+    padding: 36px 18px;
+  }
+}

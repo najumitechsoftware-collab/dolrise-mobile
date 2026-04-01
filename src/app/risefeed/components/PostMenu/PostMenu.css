@@ -1,0 +1,75 @@
+/* BACKDROP */
+.postmenu-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(3px);
+  z-index: 90;
+}
+
+/* SHEET */
+.postmenu-sheet {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: #fffaf0;
+  border-radius: 18px 18px 0 0;
+
+  padding: 14px;
+  z-index: 91;
+
+  animation: slideUp 0.25s ease-out;
+}
+
+/* HANDLE */
+.postmenu-handle {
+  width: 42px;
+  height: 4px;
+  background: #d4af37;
+  border-radius: 10px;
+  margin: 6px auto 14px;
+}
+
+/* LIST */
+.postmenu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.postmenu-list button {
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 12px;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  text-align: left;
+}
+
+.postmenu-list button.danger {
+  color: #c0392b;
+}
+
+/* CLOSE */
+.postmenu-close {
+  margin-top: 14px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  background: #007ea7;
+  color: white;
+}
+
+/* ANIMATION */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

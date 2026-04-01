@@ -1,0 +1,148 @@
+.ticket-list-page {
+  padding: 20px;
+}
+
+/* ===== TOP BAR ===== */
+.ticket-topbar {
+  margin-bottom: 10px;
+}
+
+.back-btn {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  color: #334155;
+  cursor: pointer;
+}
+
+/* ===== HEADER ===== */
+.ticket-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.ticket-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* ===== FILTERS ===== */
+.ticket-filters {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.ticket-filters button {
+  flex-shrink: 0;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid #cbd5f5;
+  background: #f8fafc;
+  font-size: 13px;
+}
+
+.ticket-filters button.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+/* ===== TABLE ===== */
+.ticket-table {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+}
+
+.ticket-row {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1fr 1fr 1.5fr;
+  padding: 14px 18px;
+  align-items: center;
+}
+
+.ticket-row.header {
+  background: #f9fafb;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.ticket-row:not(.header) {
+  cursor: pointer;
+}
+
+.ticket-row:not(.header):hover {
+  background: #f1f5f9;
+}
+
+.ticket-title {
+  font-weight: 500;
+}
+
+.ticket-user {
+  color: #475569;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  width: fit-content;
+}
+
+/* STATUS */
+.status.new {
+  background: #e0f2fe;
+}
+.status.in_review {
+  background: #fff7ed;
+}
+.status.escalated {
+  background: #fee2e2;
+}
+.status.closed {
+  background: #e5e7eb;
+}
+
+/* PRIORITY */
+.priority.urgent {
+  background: #dc2626;
+  color: white;
+}
+.priority.sensitive {
+  background: #7c3aed;
+  color: white;
+}
+.priority.normal {
+  background: #e5e7eb;
+}
+
+.ticket-time {
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* ===== LOADING ===== */
+.ticket-loading {
+  padding: 40px;
+  text-align: center;
+  opacity: 0.7;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .ticket-row {
+    grid-template-columns: 1.8fr 1fr 1fr;
+  }
+
+  .ticket-row span:nth-child(4),
+  .ticket-row span:nth-child(5) {
+    display: none;
+  }
+}

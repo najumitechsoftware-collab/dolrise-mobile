@@ -1,0 +1,61 @@
+.security-dashboard {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.security-header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.security-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.summary-card {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 16px;
+}
+
+.security-card h2 {
+  margin-bottom: 16px;
+}
+
+.security-card input,
+.security-card select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.security-card button {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.green-btn {
+  background: #16a34a;
+}
+
+.soft-note {
+  font-size: 13px;
+  color: #666;
+}

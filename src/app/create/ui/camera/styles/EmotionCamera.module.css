@@ -1,0 +1,220 @@
+.wrapper{
+position:fixed;
+top:0;
+left:0;
+width:100vw;
+height:100vh;
+background:black;
+overflow:hidden;
+touch-action:none;
+display:flex;
+}
+
+/* CAMERA BACKGROUND */
+
+.cameraLayer{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:1;
+}
+
+/* UI OVERLAY */
+
+.uiLayer{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:5;
+
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+
+padding:16px;
+
+/* premium fade overlay */
+
+background:linear-gradient(
+to bottom,
+rgba(0,0,0,0.45) 0%,
+rgba(0,0,0,0.1) 20%,
+rgba(0,0,0,0) 40%,
+rgba(0,0,0,0) 60%,
+rgba(0,0,0,0.15) 80%,
+rgba(0,0,0,0.45) 100%
+);
+}
+
+/* =========================
+RECORD WAVEFORM
+========================= */
+
+.waveform{
+position:absolute;
+bottom:170px;
+left:50%;
+transform:translateX(-50%);
+display:flex;
+gap:6px;
+opacity:0.9;
+}
+
+.wave{
+width:4px;
+height:18px;
+background:white;
+border-radius:4px;
+animation:wave 0.9s infinite ease-in-out;
+}
+
+.wave:nth-child(2){
+animation-delay:0.2s;
+}
+
+.wave:nth-child(3){
+animation-delay:0.4s;
+}
+
+.wave:nth-child(4){
+animation-delay:0.6s;
+}
+
+@keyframes wave{
+
+0%{
+height:8px;
+opacity:0.5;
+}
+
+50%{
+height:28px;
+opacity:1;
+}
+
+100%{
+height:8px;
+opacity:0.5;
+}
+
+}
+
+/* =========================
+CONFIRM MODAL
+========================= */
+
+.confirmOverlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.65);
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:50;
+backdrop-filter:blur(6px);
+}
+
+.confirmBox{
+background:#1a1a1a;
+padding:26px;
+border-radius:18px;
+width:290px;
+text-align:center;
+color:white;
+box-shadow:0 10px 35px rgba(0,0,0,0.6);
+animation:modalPop 0.25s ease;
+}
+
+@keyframes modalPop{
+
+0%{
+transform:scale(0.9);
+opacity:0;
+}
+
+100%{
+transform:scale(1);
+opacity:1;
+}
+
+}
+
+.confirmActions{
+display:flex;
+gap:12px;
+margin-top:18px;
+}
+
+.cancelBtn{
+flex:1;
+background:#333;
+border:none;
+padding:11px;
+border-radius:10px;
+color:white;
+font-size:14px;
+cursor:pointer;
+transition:0.25s;
+}
+
+.cancelBtn:hover{
+background:#444;
+}
+
+.discardBtn{
+flex:1;
+background:#ff3b30;
+border:none;
+padding:11px;
+border-radius:10px;
+color:white;
+font-size:14px;
+cursor:pointer;
+transition:0.25s;
+}
+
+.discardBtn:hover{
+background:#ff5147;
+}
+
+/* =========================
+RECORD BUTTON PULSE
+========================= */
+
+.recordPulse{
+animation:pulse 1.2s infinite ease-in-out;
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.18);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+.soundModalLayer{
+position:fixed;
+top:0;
+left:0;
+width:100vw;
+height:100vh;
+z-index:1000;
+display:flex;
+align-items:center;
+justify-content:center;
+}

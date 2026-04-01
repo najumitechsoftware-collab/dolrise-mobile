@@ -1,0 +1,64 @@
+.vr-box {
+  padding: 10px;
+}
+
+/* RECORDING */
+.vr-recording {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #111;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.vr-time {
+  color: #d4af37;
+  font-weight: 600;
+}
+
+/* WAVE */
+.vr-wave {
+  display: flex;
+  gap: 2px;
+  align-items: flex-end;
+}
+
+.vr-bar {
+  width: 3px;
+  background: #d4af37;
+  border-radius: 2px;
+  transition: height 0.1s linear;
+}
+
+/* BUTTONS */
+.vr-stop {
+  background: red;
+  border: none;
+  border-radius: 50%;
+  padding: 6px 8px;
+  color: white;
+}
+
+.vr-send {
+  background: #d4af37;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+
+.vr-delete {
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+/* PREVIEW */
+.vr-preview {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #111;
+  padding: 10px;
+  border-radius: 20px;
+}

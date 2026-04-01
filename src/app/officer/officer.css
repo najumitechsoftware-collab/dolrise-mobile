@@ -1,0 +1,44 @@
+.officer-layout {
+  display: flex;
+  height: 100vh;
+  background: #0b0f19;
+  color: #fff;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  background: rgba(255,255,255,0.04);
+  padding: 20px;
+  border-right: 1px solid rgba(255,255,255,0.08);
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  display: block;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.2s;
+}
+
+.menu-item:hover {
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+}
+
+.menu-item.active {
+  background: #6366f1;
+  color: #fff;
+}
+
+/* MAIN */
+.main-content {
+  flex: 1;
+  padding: 20px;
+}

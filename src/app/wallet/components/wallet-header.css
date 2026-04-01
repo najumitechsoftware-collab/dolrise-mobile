@@ -1,0 +1,62 @@
+/* =========================================
+   WALLET HEADER — PREMIUM CALM TICKER
+========================================= */
+
+.wallet-header {
+  margin-bottom: 24px;
+}
+
+.wallet-header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Title */
+.wallet-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1f2b;
+}
+
+/* Subtitle */
+.wallet-subtitle {
+  font-size: 14px;
+  color: #6c7383;
+  line-height: 1.5;
+}
+
+/* ===============================
+   TICKER (MARQUEE STYLE)
+=============================== */
+
+.wallet-ticker {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  height: 20px;
+}
+
+/* Moving track */
+.wallet-ticker-track {
+  display: inline-flex;
+  gap: 40px;
+  animation: tickerMove 18s linear infinite;
+  color: #8b93a7;
+  font-size: 13px;
+}
+
+/* Smooth infinite loop */
+.wallet-ticker-track span {
+  display: inline-block;
+}
+
+/* Animation */
+@keyframes tickerMove {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

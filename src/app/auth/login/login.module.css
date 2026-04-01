@@ -1,0 +1,282 @@
+/* ================================
+   DolRise Auth – FULL SCREEN PREMIUM UI
+================================ */
+
+/* PAGE BACKGROUND */
+.page {
+  min-height: 100vh;
+  padding: 28px 18px;
+  background: radial-gradient(circle at top, #ffffff, #f6f1e7);
+}
+
+/* REMOVE CARD EFFECT */
+.card {
+  width: 100%;
+  max-width: 100%;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+
+/* CENTER CONTENT (LIKE REGISTER) */
+.logoWrap,
+.title,
+.sub,
+.googleBtn,
+.divider,
+.form,
+.register,
+.footer {
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* LOGO */
+.logoWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* TITLES */
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #0d1a26;
+  margin-top: 20px;
+}
+
+.sub {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #5c6773;
+  line-height: 1.6;
+}
+
+/* ================= GOOGLE BUTTON ================= */
+.googleBtn {
+  width: 100%;
+  margin-top: 30px;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid #e7e2d5;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.googleBtn img {
+  width: 18px;
+}
+
+.googleBtn:hover {
+  background: #faf7f1;
+  border-color: #d4af37;
+}
+
+/* LOADER */
+.loader {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-top: 2px solid #d4af37;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* DIVIDER */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 26px auto;
+  color: #9aa3ad;
+  font-size: 13px;
+  max-width: 420px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e6dfce;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* INPUT LABEL */
+.inputLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f2a3d;
+  margin-bottom: 5px;
+}
+
+/* INPUT WRAP */
+.inputWrap {
+  position: relative;
+}
+
+/* INPUT FIELD */
+.inputField {
+  width: 100%;
+  padding: 14px 14px 14px 42px;
+  border-radius: 14px;
+  border: 1px solid #ddd7c7;
+  background: #ffffff;
+  font-size: 15px;
+  color: #1c1c1c;
+  transition: all 0.25s ease;
+}
+
+.inputField:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+  outline: none;
+}
+
+/* ICONS */
+.inputIcon {
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  color: #2a7fa5;
+}
+
+.showIcon {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  color: #777;
+}
+
+/* PASSWORD ROW */
+.inputTopRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* FORGOT */
+.forgot {
+  font-size: 13px;
+  color: #2a7fa5 !important;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+/* ERROR */
+.error {
+  text-align: center;
+  font-size: 14px;
+  color: #d93030;
+}
+
+/* LOGIN BUTTON */
+.btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, #d4af37, #e2c15a, #b1841a);
+  transition: all 0.25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.08);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+/* REGISTER */
+.register {
+  text-align: center;
+  margin-top: 20px;
+  color: #444;
+  font-size: 14px;
+}
+
+.registerLink {
+  color: #2a7fa5;
+  font-weight: 600;
+}
+
+.registerLink:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 26px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  text-align: center;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.footerLinks {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.footerLinks a {
+  text-decoration: none;
+  color: #475569;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+.footerLinks a:hover {
+  color: #d4af37;
+}
+
+.footerLinks span {
+  color: #cbd5e1;
+}
+
+.copy {
+  font-size: 12px;
+  color: #94a3b8;
+}

@@ -1,0 +1,89 @@
+.exec-overview {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* ALERT */
+.exec-alert {
+  padding: 14px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.exec-alert.low { background: #1e293b; }
+.exec-alert.medium { background: #78350f; color: #fbbf24; }
+.exec-alert.high { background: #7f1d1d; color: #f87171; }
+
+/* SNAPSHOT */
+.exec-snapshot {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.exec-card {
+  background: #111827;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #1f2937;
+  transition: 0.3s;
+}
+
+.exec-card:hover {
+  border-color: #2563eb;
+}
+
+.exec-card span {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.exec-card h2 {
+  margin-top: 10px;
+  font-size: 26px;
+}
+
+.exec-card.threat {
+  border-left: 4px solid #f59e0b;
+}
+
+/* MOMENTUM */
+.exec-momentum h3,
+.exec-risk h3,
+.exec-governance h3,
+.exec-feed h3 {
+  margin-bottom: 15px;
+}
+
+.chart-placeholder {
+  background: #111827;
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid #1f2937;
+  text-align: center;
+  color: #6b7280;
+}
+
+/* RISK */
+.risk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.risk-card {
+  background: #111827;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #1f2937;
+}
+
+/* GOVERNANCE */
+.governance-feed,
+.feed-box {
+  background: #111827;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #1f2937;
+}
