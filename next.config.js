@@ -1,19 +1,11 @@
 /** @type {import('next').NextConfig} */
-
-const isExport = process.env.EXPORT === "true";
-
 const nextConfig = {
+  output: "export", // 🔥 THIS IS THE FIX
+
   reactStrictMode: true,
 
-  // 🔥 Only enable export when explicitly needed (for Capacitor)
-  ...(isExport && {
-    output: "export",
-  }),
-
   images: {
-    // ⚠️ required only for export mode
     unoptimized: true,
-
     remotePatterns: [
       {
         protocol: "https",
@@ -27,7 +19,7 @@ const nextConfig = {
   },
 
   experimental: {
-    workerThreads: false, // 💥 reduce memory usage during build
+    workerThreads: false,
   },
 };
 

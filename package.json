@@ -10,6 +10,7 @@
     "format": "biome format --write"
   },
   "dependencies": {
+    "@capacitor/android": "^8.3.0",
     "@capacitor/cli": "^7.6.1",
     "@capacitor/core": "^8.3.0",
     "@mediapipe/camera_utils": "^0.3.1675466862",
