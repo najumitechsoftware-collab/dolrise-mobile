@@ -1,5 +1,7 @@
 {
   "name": "DolRise",
-  "integrations": {},
-  "type": "custom"
+  "type": "custom",
+  "integrations": {
+    "capacitor": {}
+  }
 }

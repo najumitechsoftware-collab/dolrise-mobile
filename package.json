@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3000",
-    "build": "NODE_OPTIONS=--max-old-space-size=2048 NEXT_TELEMETRY_DISABLED=1 next build",
+    "build": "echo 'skip next build for appflow'",
     "start": "NEXT_TELEMETRY_DISABLED=1 next start -p 7000",
     "lint": "biome check",
     "format": "biome format --write"
