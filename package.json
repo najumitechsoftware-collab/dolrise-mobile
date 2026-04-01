@@ -2,13 +2,19 @@
   "name": "dolrise-frontend",
   "version": "5.4.0",
   "private": true,
+
   "scripts": {
     "dev": "next dev -p 3000",
-    "build": "echo 'skip next build for appflow'",
-    "start": "NEXT_TELEMETRY_DISABLED=1 next start -p 7000",
+
+    // 🔥 CRITICAL FIX: stop Appflow from running next build
+    "build": "echo 'Appflow skip next build'",
+
+    "start": "next start -p 7000",
+
     "lint": "biome check",
     "format": "biome format --write"
   },
+
   "dependencies": {
     "@capacitor/android": "^8.3.0",
     "@capacitor/cli": "^7.6.1",
@@ -36,6 +42,7 @@
     "wavesurfer.js": "^7.11.1",
     "zustand": "^5.0.8"
   },
+
   "devDependencies": {
     "@biomejs/biome": "2.2.0",
     "@tailwindcss/postcss": "^4",
@@ -51,10 +58,12 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   },
+
   "engines": {
     "node": ">=20.0.0",
     "npm": ">=10.0.0"
   },
+
   "description": "DolRise Frontend — Emotional Intelligence Ecosystem by Najumi Tech",
   "author": "Najumi Tech",
   "license": "Proprietary"
